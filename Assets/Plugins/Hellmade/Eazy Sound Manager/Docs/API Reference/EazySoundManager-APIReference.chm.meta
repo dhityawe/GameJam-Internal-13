@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0050e7f214aa2c343b1ecfaf9a5877a5
+timeCreated: 1543580589
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 71142
+  packageName: Eazy Sound Manager
+  packageVersion: 1.3.0
+  assetPath: Assets/Hellmade/Eazy Sound Manager/Docs/API Reference/EazySoundManager-APIReference.chm
+  uploadId: 324501
