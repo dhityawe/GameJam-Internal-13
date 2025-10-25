@@ -23,7 +23,7 @@ MonoBehaviour:
     - {fileID: 6114163804962241700, guid: acc191fd44435a148ad13e6b53543860, type: 3}
     - {fileID: -7154528564402915179, guid: acc191fd44435a148ad13e6b53543860, type: 3}
     SpriteAnimationType: 0
-  - Name: Run
+  - Name: Move
     FPS: 10
     Frames:
     - {fileID: -4726913989911992049, guid: 16b00d8549c7f5041acd395070ec431f, type: 3}
