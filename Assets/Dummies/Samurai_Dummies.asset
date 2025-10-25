@@ -19,7 +19,14 @@ MonoBehaviour:
     SpriteAnimationType: 0
   - Name: Run
     FPS: 12
-    Frames: []
+    Frames:
+    - {fileID: 8886490851947454144, guid: 2b3122f3bc0faa44d95bfa9880160c05, type: 3}
+    - {fileID: 6548489276043825817, guid: 2b3122f3bc0faa44d95bfa9880160c05, type: 3}
+    - {fileID: 4970056502602508726, guid: 2b3122f3bc0faa44d95bfa9880160c05, type: 3}
+    - {fileID: 1935231433567745852, guid: 2b3122f3bc0faa44d95bfa9880160c05, type: 3}
+    - {fileID: 8810267081325647525, guid: 2b3122f3bc0faa44d95bfa9880160c05, type: 3}
+    - {fileID: 4172772526038875549, guid: 2b3122f3bc0faa44d95bfa9880160c05, type: 3}
+    - {fileID: -9022913262071093832, guid: 2b3122f3bc0faa44d95bfa9880160c05, type: 3}
     SpriteAnimationType: 0
   - Name: Attack
     FPS: 12

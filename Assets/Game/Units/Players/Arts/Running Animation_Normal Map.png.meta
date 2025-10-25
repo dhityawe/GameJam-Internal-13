@@ -1,70 +1,70 @@
 fileFormatVersion: 2
-guid: fc13a0df272712546929b373ecc9690e
+guid: fbcfa1f2404e16548828ba9f9dfb6f2c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5359830243586936809
-    second: Running Animation_Normal Map_0
+      213: -4396862657819510773
+    second: Running Right Animation_Normal Map_0
   - first:
-      213: 3692109256385646473
-    second: Running Animation_Normal Map_1
+      213: -5750860903709743497
+    second: Running Right Animation_Normal Map_1
   - first:
-      213: 6062996296616465627
-    second: Running Animation_Normal Map_2
+      213: 2242818213924585627
+    second: Running Right Animation_Normal Map_2
   - first:
-      213: -5536970263958236447
-    second: Running Animation_Normal Map_3
+      213: 3980329203188686501
+    second: Running Right Animation_Normal Map_3
   - first:
-      213: -8913652041898788513
-    second: Running Animation_Normal Map_4
+      213: -8531773350800572643
+    second: Running Right Animation_Normal Map_4
   - first:
-      213: 1275911758261352998
-    second: Running Animation_Normal Map_5
+      213: 4432084003405610191
+    second: Running Right Animation_Normal Map_5
   - first:
-      213: 2673011805738475198
-    second: Running Animation_Normal Map_6
+      213: 1679096278433136382
+    second: Running Right Animation_Normal Map_6
   - first:
-      213: -1075615304721936583
-    second: Running Animation_Normal Map_7
+      213: 7716016666173265946
+    second: Running Right Animation_Normal Map_7
   - first:
-      213: -2182556360232430611
-    second: Running Animation_Normal Map_8
+      213: 4177196078015552772
+    second: Running Right Animation_Normal Map_8
   - first:
-      213: -2911367089290769541
-    second: Running Animation_Normal Map_9
+      213: 7053610091186453644
+    second: Running Right Animation_Normal Map_9
   - first:
-      213: 7211419067420481699
-    second: Running Animation_Normal Map_10
+      213: 5912163418888804944
+    second: Running Right Animation_Normal Map_10
   - first:
-      213: -3735843350521333456
-    second: Running Animation_Normal Map_11
+      213: -3683561327946285861
+    second: Running Right Animation_Normal Map_11
   - first:
-      213: -74197819576413819
-    second: Running Animation_Normal Map_12
+      213: -4862992717608614221
+    second: Running Right Animation_Normal Map_12
   - first:
-      213: -6891725262960805658
-    second: Running Animation_Normal Map_13
+      213: 2697139693082098610
+    second: Running Right Animation_Normal Map_13
   - first:
-      213: 2062647572908828657
-    second: Running Animation_Normal Map_14
+      213: -8902474204301639269
+    second: Running Right Animation_Normal Map_14
   - first:
-      213: 5726355843218972741
-    second: Running Animation_Normal Map_15
+      213: 7975508695070808665
+    second: Running Right Animation_Normal Map_15
   - first:
-      213: -427063092643682649
-    second: Running Animation_Normal Map_16
+      213: -5251580244376974395
+    second: Running Right Animation_Normal Map_16
   - first:
-      213: 2405548293150266863
-    second: Running Animation_Normal Map_17
+      213: -3019589682482600603
+    second: Running Right Animation_Normal Map_17
   - first:
-      213: 3030613485305605450
-    second: Running Animation_Normal Map_18
+      213: 1316332817112733541
+    second: Running Right Animation_Normal Map_18
   - first:
-      213: 2394205916750393298
-    second: Running Animation_Normal Map_19
+      213: -1787352653446863862
+    second: Running Right Animation_Normal Map_19
   - first:
-      213: -8279447117886924187
-    second: Running Animation_Normal Map_20
+      213: 2922800766456039349
+    second: Running Right Animation_Normal Map_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,7 +111,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -163,20 +163,20 @@ TextureImporter:
       name: Running Animation_Normal Map_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 305
-        width: 68
-        height: 97
+        x: 0
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 710fa928ace0e95b0800000000000000
-      internalID: -5359830243586936809
+      spriteID: a04a8d2b738185f479f791e7f4998fed
+      internalID: -623354975
       vertices: []
       indices: 
       edges: []
@@ -185,20 +185,20 @@ TextureImporter:
       name: Running Animation_Normal Map_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 402
-        width: 48
-        height: 97
+        x: 100
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 98f4cca9ec10d3330800000000000000
-      internalID: 3692109256385646473
+      spriteID: 53e6929119715dc45a7e8782f1e0483c
+      internalID: 1416881246
       vertices: []
       indices: 
       edges: []
@@ -207,20 +207,20 @@ TextureImporter:
       name: Running Animation_Normal Map_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 308
-        width: 70
-        height: 94
+        x: 200
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bd455563207142450800000000000000
-      internalID: 6062996296616465627
+      spriteID: cebf6e49bb3f6a44db4a411bbea5780d
+      internalID: -1904871291
       vertices: []
       indices: 
       edges: []
@@ -229,20 +229,20 @@ TextureImporter:
       name: Running Animation_Normal Map_3
       rect:
         serializedVersion: 2
-        x: 127
-        y: 402
-        width: 50
-        height: 98
+        x: 300
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1e25edc81eab823b0800000000000000
-      internalID: -5536970263958236447
+      spriteID: 054ca3a833c20824aaffe513c982cc2b
+      internalID: 687882261
       vertices: []
       indices: 
       edges: []
@@ -251,20 +251,20 @@ TextureImporter:
       name: Running Animation_Normal Map_4
       rect:
         serializedVersion: 2
-        x: 215
-        y: 305
-        width: 68
-        height: 97
+        x: 400
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f59ff27c1b85c4480800000000000000
-      internalID: -8913652041898788513
+      spriteID: c8aac97678d396443a23be85ad6c2ac6
+      internalID: -2013092842
       vertices: []
       indices: 
       edges: []
@@ -273,20 +273,20 @@ TextureImporter:
       name: Running Animation_Normal Map_5
       rect:
         serializedVersion: 2
-        x: 228
-        y: 402
-        width: 51
-        height: 98
+        x: 0
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 62a79ebebf2f4b110800000000000000
-      internalID: 1275911758261352998
+      spriteID: 3601f31f0b07be04ba8a9aeeb4abd875
+      internalID: 1504304939
       vertices: []
       indices: 
       edges: []
@@ -295,9 +295,9 @@ TextureImporter:
       name: Running Animation_Normal Map_6
       rect:
         serializedVersion: 2
-        x: 318
-        y: 302
-        width: 61
+        x: 100
+        y: 300
+        width: 100
         height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -305,10 +305,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ebe97793312781520800000000000000
-      internalID: 2673011805738475198
+      spriteID: f3acbc133f521b640a1606e45d2137ea
+      internalID: 1488812469
       vertices: []
       indices: 
       edges: []
@@ -317,20 +317,20 @@ TextureImporter:
       name: Running Animation_Normal Map_7
       rect:
         serializedVersion: 2
-        x: 325
-        y: 401
-        width: 56
-        height: 99
+        x: 200
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 93f43174495a211f0800000000000000
-      internalID: -1075615304721936583
+      spriteID: 212b6623033fbe442a0307839742e438
+      internalID: -1599785847
       vertices: []
       indices: 
       edges: []
@@ -339,9 +339,9 @@ TextureImporter:
       name: Running Animation_Normal Map_8
       rect:
         serializedVersion: 2
-        x: 421
-        y: 400
-        width: 60
+        x: 300
+        y: 300
+        width: 100
         height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -349,10 +349,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: de39316dd8006b1e0800000000000000
-      internalID: -2182556360232430611
+      spriteID: ab230a694c6f389429efb9cba2209151
+      internalID: 728227990
       vertices: []
       indices: 
       edges: []
@@ -361,9 +361,9 @@ TextureImporter:
       name: Running Animation_Normal Map_9
       rect:
         serializedVersion: 2
-        x: 324
-        y: 202
-        width: 53
+        x: 400
+        y: 300
+        width: 100
         height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -371,10 +371,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b7b8f00be0fb897d0800000000000000
-      internalID: -2911367089290769541
+      spriteID: 5da6a19de9890c941bfad1f20dfdbaa8
+      internalID: 1546324442
       vertices: []
       indices: 
       edges: []
@@ -383,20 +383,20 @@ TextureImporter:
       name: Running Animation_Normal Map_10
       rect:
         serializedVersion: 2
-        x: 423
-        y: 302
-        width: 51
-        height: 99
+        x: 0
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3a893102f6b141460800000000000000
-      internalID: 7211419067420481699
+      spriteID: cf1a3664d03d03e409b202c73a77aae7
+      internalID: 1580007706
       vertices: []
       indices: 
       edges: []
@@ -405,20 +405,20 @@ TextureImporter:
       name: Running Animation_Normal Map_11
       rect:
         serializedVersion: 2
-        x: 424
+        x: 100
         y: 200
-        width: 53
-        height: 102
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 039bbab144e972cc0800000000000000
-      internalID: -3735843350521333456
+      spriteID: f93f2eae194938740b6d169622b06bbb
+      internalID: 617498240
       vertices: []
       indices: 
       edges: []
@@ -427,20 +427,20 @@ TextureImporter:
       name: Running Animation_Normal Map_12
       rect:
         serializedVersion: 2
-        x: 25
-        y: 202
-        width: 55
-        height: 98
+        x: 200
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5811a09e97568fef0800000000000000
-      internalID: -74197819576413819
+      spriteID: d528bb5248d492f428479c9f035842e4
+      internalID: 1270870383
       vertices: []
       indices: 
       edges: []
@@ -449,20 +449,20 @@ TextureImporter:
       name: Running Animation_Normal Map_13
       rect:
         serializedVersion: 2
-        x: 124
-        y: 202
-        width: 58
-        height: 98
+        x: 300
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6e8b2a3236cab50a0800000000000000
-      internalID: -6891725262960805658
+      spriteID: d6623cac0d797dc49a78158c7c71f7bf
+      internalID: -672417541
       vertices: []
       indices: 
       edges: []
@@ -471,20 +471,20 @@ TextureImporter:
       name: Running Animation_Normal Map_14
       rect:
         serializedVersion: 2
-        x: 224
-        y: 203
-        width: 56
-        height: 98
+        x: 400
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1f76d080a0fff9c10800000000000000
-      internalID: 2062647572908828657
+      spriteID: aafab8487cdeb9b488bba91cb323406a
+      internalID: -670226002
       vertices: []
       indices: 
       edges: []
@@ -493,20 +493,20 @@ TextureImporter:
       name: Running Animation_Normal Map_15
       rect:
         serializedVersion: 2
-        x: 21
-        y: 104
-        width: 59
-        height: 98
+        x: 0
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 540ac84cc4a187f40800000000000000
-      internalID: 5726355843218972741
+      spriteID: 8a7b3c9e20b9116409ef21ec9056205a
+      internalID: -204008605
       vertices: []
       indices: 
       edges: []
@@ -515,20 +515,20 @@ TextureImporter:
       name: Running Animation_Normal Map_16
       rect:
         serializedVersion: 2
-        x: 120
-        y: 107
-        width: 61
-        height: 95
+        x: 100
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7a62b424164c21af0800000000000000
-      internalID: -427063092643682649
+      spriteID: 8c4c6ec6ab6190c40b5d7cc95fa265da
+      internalID: -780207129
       vertices: []
       indices: 
       edges: []
@@ -537,20 +537,20 @@ TextureImporter:
       name: Running Animation_Normal Map_17
       rect:
         serializedVersion: 2
-        x: 221
-        y: 105
-        width: 59
-        height: 97
+        x: 200
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fe5d44f6d69326120800000000000000
-      internalID: 2405548293150266863
+      spriteID: 48a3f71d7b3ed514d83e37bd4273aba8
+      internalID: 393588742
       vertices: []
       indices: 
       edges: []
@@ -559,20 +559,20 @@ TextureImporter:
       name: Running Animation_Normal Map_18
       rect:
         serializedVersion: 2
-        x: 323
-        y: 103
-        width: 54
-        height: 99
+        x: 300
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a4d262378e6ee0a20800000000000000
-      internalID: 3030613485305605450
+      spriteID: 1eafe2ac99dfb8544b66a03554832447
+      internalID: 2010595413
       vertices: []
       indices: 
       edges: []
@@ -581,9 +581,9 @@ TextureImporter:
       name: Running Animation_Normal Map_19
       rect:
         serializedVersion: 2
-        x: 425
-        y: 101
-        width: 47
+        x: 400
+        y: 100
+        width: 100
         height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -591,10 +591,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2dfab03a89de93120800000000000000
-      internalID: 2394205916750393298
+      spriteID: 44aafb31ae0c25a4a916d5748ff44ad1
+      internalID: -657613548
       vertices: []
       indices: 
       edges: []
@@ -603,20 +603,20 @@ TextureImporter:
       name: Running Animation_Normal Map_20
       rect:
         serializedVersion: 2
-        x: 26
-        y: 2
-        width: 48
-        height: 98
+        x: 0
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 56ad7b176be791d80800000000000000
-      internalID: -8279447117886924187
+      spriteID: ba297b92a57f1874e9016149de19371c
+      internalID: 2019067470
       vertices: []
       indices: 
       edges: []
@@ -625,7 +625,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2ad21265752712645bfb918767d6113d
     internalID: 0
     vertices: []
     indices: 
@@ -633,29 +633,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":100.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Running Animation_Normal Map_0: -5359830243586936809
-      Running Animation_Normal Map_1: 3692109256385646473
-      Running Animation_Normal Map_10: 7211419067420481699
-      Running Animation_Normal Map_11: -3735843350521333456
-      Running Animation_Normal Map_12: -74197819576413819
-      Running Animation_Normal Map_13: -6891725262960805658
-      Running Animation_Normal Map_14: 2062647572908828657
-      Running Animation_Normal Map_15: 5726355843218972741
-      Running Animation_Normal Map_16: -427063092643682649
-      Running Animation_Normal Map_17: 2405548293150266863
-      Running Animation_Normal Map_18: 3030613485305605450
-      Running Animation_Normal Map_19: 2394205916750393298
-      Running Animation_Normal Map_2: 6062996296616465627
-      Running Animation_Normal Map_20: -8279447117886924187
-      Running Animation_Normal Map_3: -5536970263958236447
-      Running Animation_Normal Map_4: -8913652041898788513
-      Running Animation_Normal Map_5: 1275911758261352998
-      Running Animation_Normal Map_6: 2673011805738475198
-      Running Animation_Normal Map_7: -1075615304721936583
-      Running Animation_Normal Map_8: -2182556360232430611
-      Running Animation_Normal Map_9: -2911367089290769541
+      Running Animation_Normal Map_0: -623354975
+      Running Animation_Normal Map_1: 1416881246
+      Running Animation_Normal Map_10: 1580007706
+      Running Animation_Normal Map_11: 617498240
+      Running Animation_Normal Map_12: 1270870383
+      Running Animation_Normal Map_13: -672417541
+      Running Animation_Normal Map_14: -670226002
+      Running Animation_Normal Map_15: -204008605
+      Running Animation_Normal Map_16: -780207129
+      Running Animation_Normal Map_17: 393588742
+      Running Animation_Normal Map_18: 2010595413
+      Running Animation_Normal Map_19: -657613548
+      Running Animation_Normal Map_2: -1904871291
+      Running Animation_Normal Map_20: 2019067470
+      Running Animation_Normal Map_3: 687882261
+      Running Animation_Normal Map_4: -2013092842
+      Running Animation_Normal Map_5: 1504304939
+      Running Animation_Normal Map_6: 1488812469
+      Running Animation_Normal Map_7: -1599785847
+      Running Animation_Normal Map_8: 728227990
+      Running Animation_Normal Map_9: 1546324442
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

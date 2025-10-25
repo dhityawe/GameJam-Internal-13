@@ -23,12 +23,10 @@ namespace Game.Units.Players
         [SerializeField] private float coyoteTime = 0.15f;
         [SerializeField] private float jumpBufferTime = 0.15f;
 
-    private Rigidbody2D rb;
-    private PlayerMovement playerMovement;
-    private PlayerDash playerDash;
+        private Rigidbody2D rb;
+        private PlayerMovement playerMovement;
 
-    private bool isGrounded;
-    private bool pendingJumpAfterDash = false;
+        private bool isGrounded;
         private float coyoteTimeCounter;
         private float jumpBufferCounter;
         private bool isJumping;
@@ -38,7 +36,6 @@ namespace Game.Units.Players
         {
             rb = rigidbody;
             playerMovement = GetComponent<PlayerMovement>();
-            playerDash = GetComponent<PlayerDash>();
         }
 
         public void UpdateJump()
@@ -46,13 +43,6 @@ namespace Game.Units.Players
             CheckGrounded();
             UpdateTimers();
             ApplyGravityModifiers();
-
-            // If dash just ended and jump was buffered, try to jump now
-            if (pendingJumpAfterDash && playerDash != null && !playerDash.IsDashing)
-            {
-                pendingJumpAfterDash = false;
-                TryPerformJump();
-            }
         }
 
         private void CheckGrounded()
@@ -96,21 +86,8 @@ namespace Game.Units.Players
 
         public void Jump()
         {
-            Debug.Log("IKI LOMPAT COK");
             jumpBufferCounter = jumpBufferTime;
 
-            // If dashing, buffer the jump to perform after dash ends
-            if (playerDash != null && playerDash.IsDashing)
-            {
-                pendingJumpAfterDash = true;
-                return;
-            }
-
-            TryPerformJump();
-        }
-
-        private void TryPerformJump()
-        {
             if (coyoteTimeCounter > 0f && jumpsRemaining == (enableDoubleJump ? 2 : 1))
             {
                 PerformJump(jumpForce);
@@ -123,7 +100,6 @@ namespace Game.Units.Players
 
         private void PerformJump(float force)
         {
-            Debug.Log("LOMPAT TEMENAN SU");
             if (rb == null) return;
 
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);

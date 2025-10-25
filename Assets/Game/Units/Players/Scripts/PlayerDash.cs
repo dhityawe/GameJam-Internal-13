@@ -4,8 +4,17 @@ using UnityEngine.InputSystem;
 
 namespace Game.Units.Players
 {
+
     public class PlayerDash : MonoBehaviour
     {
+        // Allow external force to end dash (e.g. for jump cancel)
+        public void ForceEndDash()
+        {
+            if (isDashing)
+            {
+                EndDash();
+            }
+        }
         [Header("Dash Settings")]
         [SerializeField] private float dashDuration = 0.2f;
         [SerializeField] private float dashCooldown = 0.3f;
@@ -143,7 +152,7 @@ namespace Game.Units.Players
         public void OnLanded()
         {
             dashesLeft = maxDashes;
-            dashCooldownTimer = 0f;
+            // Do not reset dashCooldownTimer here; let it finish naturally
         }
 
         // (Removed duplicate OnDrawGizmos)

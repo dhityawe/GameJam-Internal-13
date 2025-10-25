@@ -5,8 +5,8 @@ namespace Game.Units.Players
     public class PlayerMovement : MonoBehaviour
     {
         [Header("Movement Settings")]
-    [SerializeField] private float moveSpeed = 8f;
-    public float MoveSpeed => moveSpeed;
+        [SerializeField] private float moveSpeed = 8f;
+        public float MoveSpeed => moveSpeed;
         [SerializeField] private float acceleration = 50f;
         [SerializeField] private float deceleration = 50f;
         [SerializeField] private float velocityPower = 0.9f;
@@ -17,6 +17,9 @@ namespace Game.Units.Players
         private Rigidbody2D rb;
         private Vector2 movementInput;
         private bool isGrounded;
+
+        [Header("Reference")]
+        [SerializeField] private PlayerAnimationController playerAnimationController;
 
         public void Initialize(Rigidbody2D rigidbody)
         {
@@ -41,6 +44,15 @@ namespace Game.Units.Players
 
         private void ApplyMovement()
         {
+            if (Mathf.Abs(movementInput.x) > 0.01f)
+            {
+                playerAnimationController.MovingAnim();
+            }
+            else
+            {
+                playerAnimationController.IdleAnim();
+            }
+            
             float targetSpeed = movementInput.x * moveSpeed;
             float speedDifference = targetSpeed - rb.linearVelocity.x;
 
