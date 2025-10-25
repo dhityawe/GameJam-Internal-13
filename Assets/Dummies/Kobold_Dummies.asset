@@ -44,7 +44,3 @@ MonoBehaviour:
     - {fileID: 1935231433567745852, guid: e4b881b4b33a62f478107cbcce143439, type: 3}
     - {fileID: 8810267081325647525, guid: e4b881b4b33a62f478107cbcce143439, type: 3}
     SpriteAnimationType: 1
-  - Name: Hurt
-    FPS: 12
-    Frames: []
-    SpriteAnimationType: 1

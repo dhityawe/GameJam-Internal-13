@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a77fafcc6bd2ee94ebe9ac341b986e7a, type: 3}
+  m_Name: PlayerAnim
+  m_EditorClassIdentifier: 
+  SpriteAnimations:
+  - Name: Running
+    FPS: 0
+    Frames: []
+    SpriteAnimationType: 0
+  - Name: Idle
+    FPS: 30
+    Frames:
+    - {fileID: -6770089222090493702, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 1811644758572954279, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 3973996312176957015, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -6767764906471943366, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 1607767033638283280, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 7225202008142569418, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 5189102193247230491, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 7434087904480301903, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -5880060302498507291, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -2696297714024986618, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -4958103139461598456, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 4172070346064154819, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 1387675444541639892, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 9101562237682363839, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -3077502408179904265, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: 3621650735279285929, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -5208198743869148285, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -7714808329129610911, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -4276363403188789641, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -3130333631928838212, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    - {fileID: -8724597783126217407, guid: a50cea26e133e2a44aad11a71652e6b2, type: 3}
+    SpriteAnimationType: 0
