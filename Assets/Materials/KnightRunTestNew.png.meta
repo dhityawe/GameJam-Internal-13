@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: c0429d32f54445f42a5efb1a9dfedd59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8682090787831381675
+    second: KnightRunTestNew_0
+  - first:
+      213: 9076836470280226485
+    second: KnightRunTestNew_1
+  - first:
+      213: -5808778358066797814
+    second: KnightRunTestNew_2
+  - first:
+      213: 637442010752163676
+    second: KnightRunTestNew_3
+  - first:
+      213: -5058862120795326658
+    second: KnightRunTestNew_4
+  - first:
+      213: -4663314520398421984
+    second: KnightRunTestNew_5
+  - first:
+      213: 5822700181023166952
+    second: KnightRunTestNew_6
+  - first:
+      213: 8693359199590939728
+    second: KnightRunTestNew_7
+  - first:
+      213: -1501358688269992198
+    second: KnightRunTestNew_8
+  - first:
+      213: -3935302401158362685
+    second: KnightRunTestNew_9
+  - first:
+      213: 8731689207852770844
+    second: KnightRunTestNew_10
+  - first:
+      213: 553011501408211613
+    second: KnightRunTestNew_11
+  - first:
+      213: -1670673697249230576
+    second: KnightRunTestNew_12
+  - first:
+      213: 7931230161539208513
+    second: KnightRunTestNew_13
+  - first:
+      213: 1276377402395035315
+    second: KnightRunTestNew_14
+  - first:
+      213: 2294604073637045366
+    second: KnightRunTestNew_15
+  - first:
+      213: 7714346523539695902
+    second: KnightRunTestNew_16
+  - first:
+      213: 6584272323640713990
+    second: KnightRunTestNew_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KnightRunTestNew_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 404
+        width: 38
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5518e9b9d64038780800000000000000
+      internalID: -8682090787831381675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 404
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b60d57bda667fd70800000000000000
+      internalID: 9076836470280226485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 407
+        width: 49
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03a37c0cd2136fa0800000000000000
+      internalID: -5808778358066797814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 406
+        width: 52
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f1bc7a126a8d800800000000000000
+      internalID: 637442010752163676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_4
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 405
+        width: 56
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37b05244bf4bc9b0800000000000000
+      internalID: -5058862120795326658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 304
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0202bb7a624984fb0800000000000000
+      internalID: -4663314520398421984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 303
+        width: 57
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e11d73f6f26ec050800000000000000
+      internalID: 5822700181023166952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 304
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05cfd74f12405a870800000000000000
+      internalID: 8693359199590939728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_8
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 304
+        width: 49
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe78314a3a1a2be0800000000000000
+      internalID: -1501358688269992198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_9
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 304
+        width: 56
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9c637f05ff269c0800000000000000
+      internalID: -3935302401158362685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 207
+        width: 60
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c162d2372113d2970800000000000000
+      internalID: 8731689207852770844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 207
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d925422d701bca700800000000000000
+      internalID: 553011501408211613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 206
+        width: 60
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0110fdbbf1390d8e0800000000000000
+      internalID: -1670673697249230576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_13
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 205
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145986a7fc3611e60800000000000000
+      internalID: 7931230161539208513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_14
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 204
+        width: 49
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b687152c7a96b110800000000000000
+      internalID: 1276377402395035315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_15
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 102
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674ec456f3218df10800000000000000
+      internalID: 2294604073637045366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 103
+        width: 32
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e196ad17a4dde0b60800000000000000
+      internalID: 7714346523539695902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRunTestNew_17
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 103
+        width: 27
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6036a0b1bc8006b50800000000000000
+      internalID: 6584272323640713990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KnightRunTestNew_0: -8682090787831381675
+      KnightRunTestNew_1: 9076836470280226485
+      KnightRunTestNew_10: 8731689207852770844
+      KnightRunTestNew_11: 553011501408211613
+      KnightRunTestNew_12: -1670673697249230576
+      KnightRunTestNew_13: 7931230161539208513
+      KnightRunTestNew_14: 1276377402395035315
+      KnightRunTestNew_15: 2294604073637045366
+      KnightRunTestNew_16: 7714346523539695902
+      KnightRunTestNew_17: 6584272323640713990
+      KnightRunTestNew_2: -5808778358066797814
+      KnightRunTestNew_3: 637442010752163676
+      KnightRunTestNew_4: -5058862120795326658
+      KnightRunTestNew_5: -4663314520398421984
+      KnightRunTestNew_6: 5822700181023166952
+      KnightRunTestNew_7: 8693359199590939728
+      KnightRunTestNew_8: -1501358688269992198
+      KnightRunTestNew_9: -3935302401158362685
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
