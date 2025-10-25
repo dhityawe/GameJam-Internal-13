@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 564542e7f156ce8438dc993f20eee8d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4022329470754425821
+    second: Jump Animation_Normal Map_0
+  - first:
+      213: -4661845014543176344
+    second: Jump Animation_Normal Map_1
+  - first:
+      213: 2823041264480818224
+    second: Jump Animation_Normal Map_2
+  - first:
+      213: -2551595770301109604
+    second: Jump Animation_Normal Map_3
+  - first:
+      213: -1642619562559579056
+    second: Jump Animation_Normal Map_4
+  - first:
+      213: -2711555245862843476
+    second: Jump Animation_Normal Map_5
+  - first:
+      213: -157360357933790774
+    second: Jump Animation_Normal Map_6
+  - first:
+      213: -7614983705709259965
+    second: Jump Animation_Normal Map_7
+  - first:
+      213: 7031857045697094458
+    second: Jump Animation_Normal Map_8
+  - first:
+      213: 7385711959266969041
+    second: Jump Animation_Normal Map_9
+  - first:
+      213: 5080025048446571774
+    second: Jump Animation_Normal Map_10
+  - first:
+      213: -8333061601063985766
+    second: Jump Animation_Normal Map_11
+  - first:
+      213: -1644796732333868209
+    second: Jump Animation_Normal Map_12
+  - first:
+      213: -4097829796871859781
+    second: Jump Animation_Normal Map_13
+  - first:
+      213: -5067195354836332709
+    second: Jump Animation_Normal Map_14
+  - first:
+      213: 2420718621901221741
+    second: Jump Animation_Normal Map_15
+  - first:
+      213: 3390052493118410702
+    second: Jump Animation_Normal Map_16
+  - first:
+      213: -5724827278073934105
+    second: Jump Animation_Normal Map_17
+  - first:
+      213: -2950927135186496753
+    second: Jump Animation_Normal Map_18
+  - first:
+      213: -564311952020116456
+    second: Jump Animation_Normal Map_19
+  - first:
+      213: -6495200534512213502
+    second: Jump Animation_Normal Map_20
+  - first:
+      213: -1893556363222951265
+    second: Jump Animation_Normal Map_21
+  - first:
+      213: -9040430185024137344
+    second: Jump Animation_Normal Map_22
+  - first:
+      213: 6739927486620272844
+    second: Jump Animation_Normal Map_23
+  - first:
+      213: 5021569080505003174
+    second: Jump Animation_Normal Map_24
+  - first:
+      213: -8804363216982861138
+    second: Jump Animation_Normal Map_25
+  - first:
+      213: 6056136319365057777
+    second: Jump Animation_Normal Map_26
+  - first:
+      213: 5426863059193814407
+    second: Jump Animation_Normal Map_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 416
+        width: 62
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb07e9a75f22d730800000000000000
+      internalID: 4022329470754425821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 333
+        width: 62
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d6a36a8accd4fb0800000000000000
+      internalID: -4661845014543176344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 416
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03416aba2157d2720800000000000000
+      internalID: 2823041264480818224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a20d47a29e69cd0800000000000000
+      internalID: -2551595770301109604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 416
+        width: 63
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c5788f53e3439e0800000000000000
+      internalID: -1642619562559579056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 340
+        width: 53
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab8f7dcede9e5ad0800000000000000
+      internalID: -2711555245862843476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 416
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9c0a39691f0ddf0800000000000000
+      internalID: -157360357933790774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 344
+        width: 52
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343dfc26aa4225690800000000000000
+      internalID: -7614983705709259965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_8
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 350
+        width: 66
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a336a180abc269160800000000000000
+      internalID: 7031857045697094458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_9
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 359
+        width: 68
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5467155e15f7660800000000000000
+      internalID: 7385711959266969041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_10
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 282
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef49ebecddfdf7640800000000000000
+      internalID: 5080025048446571774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 286
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d1221df940b5c80800000000000000
+      internalID: -8333061601063985766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 285
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b348126128c29e0800000000000000
+      internalID: -1644796732333868209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 283
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1117fc2859127c0800000000000000
+      internalID: -4097829796871859781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_14
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 279
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f88730ca4bda9b0800000000000000
+      internalID: -5067195354836332709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_15
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 273
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f6897d2ce189120800000000000000
+      internalID: 2420718621901221741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_16
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 306
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf004ef7c2eb0f20800000000000000
+      internalID: 3390052493118410702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 185
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eecfe90ce35d80b0800000000000000
+      internalID: -5724827278073934105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 181
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03d52db7633c07d0800000000000000
+      internalID: -2950927135186496753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 177
+        width: 57
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c655df4492b28f0800000000000000
+      internalID: -564311952020116456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_20
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 172
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202e873e6896cd5a0800000000000000
+      internalID: -6495200534512213502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_21
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 167
+        width: 62
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a5ae7258cb8b5e0800000000000000
+      internalID: -1893556363222951265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_22
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 166
+        width: 63
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087daec15a0f98280800000000000000
+      internalID: -9040430185024137344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_23
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 83
+        width: 62
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc884e3e658098d50800000000000000
+      internalID: 6739927486620272844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_24
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 83
+        width: 62
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ace59a297230b540800000000000000
+      internalID: 5021569080505003174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 83
+        width: 63
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa983a3d4e90d580800000000000000
+      internalID: -8804363216982861138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_26
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 83
+        width: 62
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc881b45e7bb0450800000000000000
+      internalID: 6056136319365057777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_Normal Map_27
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 83
+        width: 62
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ddfe71337105b40800000000000000
+      internalID: 5426863059193814407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jump Animation_Normal Map_0: 4022329470754425821
+      Jump Animation_Normal Map_1: -4661845014543176344
+      Jump Animation_Normal Map_10: 5080025048446571774
+      Jump Animation_Normal Map_11: -8333061601063985766
+      Jump Animation_Normal Map_12: -1644796732333868209
+      Jump Animation_Normal Map_13: -4097829796871859781
+      Jump Animation_Normal Map_14: -5067195354836332709
+      Jump Animation_Normal Map_15: 2420718621901221741
+      Jump Animation_Normal Map_16: 3390052493118410702
+      Jump Animation_Normal Map_17: -5724827278073934105
+      Jump Animation_Normal Map_18: -2950927135186496753
+      Jump Animation_Normal Map_19: -564311952020116456
+      Jump Animation_Normal Map_2: 2823041264480818224
+      Jump Animation_Normal Map_20: -6495200534512213502
+      Jump Animation_Normal Map_21: -1893556363222951265
+      Jump Animation_Normal Map_22: -9040430185024137344
+      Jump Animation_Normal Map_23: 6739927486620272844
+      Jump Animation_Normal Map_24: 5021569080505003174
+      Jump Animation_Normal Map_25: -8804363216982861138
+      Jump Animation_Normal Map_26: 6056136319365057777
+      Jump Animation_Normal Map_27: 5426863059193814407
+      Jump Animation_Normal Map_3: -2551595770301109604
+      Jump Animation_Normal Map_4: -1642619562559579056
+      Jump Animation_Normal Map_5: -2711555245862843476
+      Jump Animation_Normal Map_6: -157360357933790774
+      Jump Animation_Normal Map_7: -7614983705709259965
+      Jump Animation_Normal Map_8: 7031857045697094458
+      Jump Animation_Normal Map_9: 7385711959266969041
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

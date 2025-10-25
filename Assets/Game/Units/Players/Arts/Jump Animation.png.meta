@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: e6a0b8aabef7a45419d82030d6366401
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -400620632967221665
+    second: Jump Animation_0
+  - first:
+      213: -3831395995258898335
+    second: Jump Animation_1
+  - first:
+      213: 4491655963978480948
+    second: Jump Animation_2
+  - first:
+      213: 4626390174618696699
+    second: Jump Animation_3
+  - first:
+      213: -8267603830083804251
+    second: Jump Animation_4
+  - first:
+      213: 1826082026726714879
+    second: Jump Animation_5
+  - first:
+      213: -4458328063101259153
+    second: Jump Animation_6
+  - first:
+      213: -6649532177771936984
+    second: Jump Animation_7
+  - first:
+      213: -1585126661709905339
+    second: Jump Animation_8
+  - first:
+      213: 8634276438086838787
+    second: Jump Animation_9
+  - first:
+      213: 4248683169815526261
+    second: Jump Animation_10
+  - first:
+      213: 3355982390275660186
+    second: Jump Animation_11
+  - first:
+      213: 6841421242764694549
+    second: Jump Animation_12
+  - first:
+      213: 3029743688336845857
+    second: Jump Animation_13
+  - first:
+      213: 5021244570876646569
+    second: Jump Animation_14
+  - first:
+      213: 3734820001851574224
+    second: Jump Animation_15
+  - first:
+      213: 5711344797121889919
+    second: Jump Animation_16
+  - first:
+      213: 471151756034671103
+    second: Jump Animation_17
+  - first:
+      213: 3694220116044693331
+    second: Jump Animation_18
+  - first:
+      213: 6646199962973372943
+    second: Jump Animation_19
+  - first:
+      213: 5657212864565346133
+    second: Jump Animation_20
+  - first:
+      213: 7407624873764469298
+    second: Jump Animation_21
+  - first:
+      213: 3371726660209520410
+    second: Jump Animation_22
+  - first:
+      213: 7717543267407782777
+    second: Jump Animation_23
+  - first:
+      213: 746471526586520113
+    second: Jump Animation_24
+  - first:
+      213: -8406743071804675079
+    second: Jump Animation_25
+  - first:
+      213: 7203508906618487876
+    second: Jump Animation_26
+  - first:
+      213: -4440862900420201962
+    second: Jump Animation_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jump Animation_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 416
+        width: 62
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5eeb4a28a5b07af0800000000000000
+      internalID: -400620632967221665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 333
+        width: 62
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1683db454a524dac0800000000000000
+      internalID: -3831395995258898335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 416
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43db33a2d41955e30800000000000000
+      internalID: 4491655963978480948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb31862a5d343040800000000000000
+      internalID: 4626390174618696699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 416
+        width: 63
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a32234ce12934d80800000000000000
+      internalID: -8267603830083804251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 340
+        width: 53
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd65c5adeb875910800000000000000
+      internalID: 1826082026726714879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 416
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62b1b27f36d022c0800000000000000
+      internalID: -4458328063101259153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 344
+        width: 52
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823cf5d07bd18b3a0800000000000000
+      internalID: -6649532177771936984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_8
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 350
+        width: 66
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542c7c413bf700ae0800000000000000
+      internalID: -1585126661709905339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_9
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 359
+        width: 68
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ae0b09cac13d770800000000000000
+      internalID: 8634276438086838787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_10
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 282
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bf80c15da56fa30800000000000000
+      internalID: 4248683169815526261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 286
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99d8d40438d29e20800000000000000
+      internalID: 3355982390275660186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 285
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5141dc57f5c91fe50800000000000000
+      internalID: 6841421242764694549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 283
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12caccf05dfcb0a20800000000000000
+      internalID: 3029743688336845857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_14
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 279
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a41671655b0fa540800000000000000
+      internalID: 5021244570876646569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_15
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 273
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d70366f00fb4d330800000000000000
+      internalID: 3734820001851574224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_16
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 306
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76c93e35d5c24f40800000000000000
+      internalID: 5711344797121889919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 185
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff18fbd960ed98600800000000000000
+      internalID: 471151756034671103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 181
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f32fa6f91844330800000000000000
+      internalID: 3694220116044693331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 177
+        width: 57
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f020e3b37ab0c3c50800000000000000
+      internalID: 6646199962973372943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_20
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 172
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fff2b8025728e40800000000000000
+      internalID: 5657212864565346133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_21
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 167
+        width: 62
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a341e439b2dc660800000000000000
+      internalID: 7407624873764469298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_22
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 166
+        width: 63
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fa0858887cace20800000000000000
+      internalID: 3371726660209520410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_23
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 83
+        width: 62
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9736c8066b83a1b60800000000000000
+      internalID: 7717543267407782777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_24
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 83
+        width: 62
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132122106effb5a00800000000000000
+      internalID: 746471526586520113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 83
+        width: 63
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb2b1f87bf355b80800000000000000
+      internalID: -8406743071804675079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_26
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 83
+        width: 62
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4448b5b4f2108f360800000000000000
+      internalID: 7203508906618487876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Animation_27
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 83
+        width: 62
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6123e3488b2ee52c0800000000000000
+      internalID: -4440862900420201962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jump Animation_0: -400620632967221665
+      Jump Animation_1: -3831395995258898335
+      Jump Animation_10: 4248683169815526261
+      Jump Animation_11: 3355982390275660186
+      Jump Animation_12: 6841421242764694549
+      Jump Animation_13: 3029743688336845857
+      Jump Animation_14: 5021244570876646569
+      Jump Animation_15: 3734820001851574224
+      Jump Animation_16: 5711344797121889919
+      Jump Animation_17: 471151756034671103
+      Jump Animation_18: 3694220116044693331
+      Jump Animation_19: 6646199962973372943
+      Jump Animation_2: 4491655963978480948
+      Jump Animation_20: 5657212864565346133
+      Jump Animation_21: 7407624873764469298
+      Jump Animation_22: 3371726660209520410
+      Jump Animation_23: 7717543267407782777
+      Jump Animation_24: 746471526586520113
+      Jump Animation_25: -8406743071804675079
+      Jump Animation_26: 7203508906618487876
+      Jump Animation_27: -4440862900420201962
+      Jump Animation_3: 4626390174618696699
+      Jump Animation_4: -8267603830083804251
+      Jump Animation_5: 1826082026726714879
+      Jump Animation_6: -4458328063101259153
+      Jump Animation_7: -6649532177771936984
+      Jump Animation_8: -1585126661709905339
+      Jump Animation_9: 8634276438086838787
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

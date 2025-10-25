@@ -1,0 +1,1807 @@
+fileFormatVersion: 2
+guid: 93550e2144e400a42abfcf77cc9dfee9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9192607800967558314
+    second: Quick Attack Animation_0
+  - first:
+      213: -985869078428937871
+    second: Quick Attack Animation_1
+  - first:
+      213: -5666688712454498564
+    second: Quick Attack Animation_2
+  - first:
+      213: 1399896045819268661
+    second: Quick Attack Animation_3
+  - first:
+      213: 5275734412769895085
+    second: Quick Attack Animation_4
+  - first:
+      213: 4222643961316519169
+    second: Quick Attack Animation_5
+  - first:
+      213: -3164779590158871100
+    second: Quick Attack Animation_6
+  - first:
+      213: -5520194255943982639
+    second: Quick Attack Animation_7
+  - first:
+      213: 7435693807748669144
+    second: Quick Attack Animation_8
+  - first:
+      213: -72848345639924877
+    second: Quick Attack Animation_9
+  - first:
+      213: -4898084108964932796
+    second: Quick Attack Animation_10
+  - first:
+      213: 8991325899542203793
+    second: Quick Attack Animation_11
+  - first:
+      213: -4496350694346946608
+    second: Quick Attack Animation_12
+  - first:
+      213: 8264313079768569242
+    second: Quick Attack Animation_13
+  - first:
+      213: 581631960849407964
+    second: Quick Attack Animation_14
+  - first:
+      213: 8256274405683225952
+    second: Quick Attack Animation_15
+  - first:
+      213: -4944790698007326029
+    second: Quick Attack Animation_16
+  - first:
+      213: -6707155466524141484
+    second: Quick Attack Animation_17
+  - first:
+      213: -4773131231449294893
+    second: Quick Attack Animation_18
+  - first:
+      213: 3387056339419505101
+    second: Quick Attack Animation_19
+  - first:
+      213: 5345321001868246924
+    second: Quick Attack Animation_20
+  - first:
+      213: -5274248555308082340
+    second: Quick Attack Animation_21
+  - first:
+      213: -5176952216981389555
+    second: Quick Attack Animation_22
+  - first:
+      213: -1867966739465662839
+    second: Quick Attack Animation_23
+  - first:
+      213: 1011768906978362141
+    second: Quick Attack Animation_24
+  - first:
+      213: -2690919086830016399
+    second: Quick Attack Animation_25
+  - first:
+      213: -7472567453058243394
+    second: Quick Attack Animation_26
+  - first:
+      213: 1924351588230235181
+    second: Quick Attack Animation_27
+  - first:
+      213: -578780299966463212
+    second: Quick Attack Animation_28
+  - first:
+      213: -4182684370675614485
+    second: Quick Attack Animation_29
+  - first:
+      213: 4843158805885547130
+    second: Quick Attack Animation_30
+  - first:
+      213: 2661044882280773389
+    second: Quick Attack Animation_31
+  - first:
+      213: 5537131210172756649
+    second: Quick Attack Animation_32
+  - first:
+      213: 2258862484476688836
+    second: Quick Attack Animation_33
+  - first:
+      213: -8478642059816645064
+    second: Quick Attack Animation_34
+  - first:
+      213: 3056561048381477773
+    second: Quick Attack Animation_35
+  - first:
+      213: 5977244795582401519
+    second: Quick Attack Animation_36
+  - first:
+      213: -8311045565120632288
+    second: Quick Attack Animation_37
+  - first:
+      213: -4560979478954863372
+    second: Quick Attack Animation_38
+  - first:
+      213: -54133001015055547
+    second: Quick Attack Animation_39
+  - first:
+      213: -8954050674478433539
+    second: Quick Attack Animation_40
+  - first:
+      213: 5161470424807559324
+    second: Quick Attack Animation_41
+  - first:
+      213: 6739176597094246120
+    second: Quick Attack Animation_42
+  - first:
+      213: 7182976139717972702
+    second: Quick Attack Animation_43
+  - first:
+      213: -7059590611406035725
+    second: Quick Attack Animation_44
+  - first:
+      213: -1081844886085597706
+    second: Quick Attack Animation_45
+  - first:
+      213: -8946879151722822920
+    second: Quick Attack Animation_46
+  - first:
+      213: -934955682761964139
+    second: Quick Attack Animation_47
+  - first:
+      213: 2518178901572932172
+    second: Quick Attack Animation_48
+  - first:
+      213: -5215918784520008324
+    second: Quick Attack Animation_49
+  - first:
+      213: -4705242547092383566
+    second: Quick Attack Animation_50
+  - first:
+      213: 7590777839799876366
+    second: Quick Attack Animation_51
+  - first:
+      213: -5122116637687872077
+    second: Quick Attack Animation_52
+  - first:
+      213: -1516548766517051247
+    second: Quick Attack Animation_53
+  - first:
+      213: -4686769841791316865
+    second: Quick Attack Animation_54
+  - first:
+      213: 8521906742389112285
+    second: Quick Attack Animation_55
+  - first:
+      213: 1354474939978074689
+    second: Quick Attack Animation_56
+  - first:
+      213: -8029979534174604196
+    second: Quick Attack Animation_57
+  - first:
+      213: -3356090519962229599
+    second: Quick Attack Animation_58
+  - first:
+      213: 8249635396824583530
+    second: Quick Attack Animation_59
+  - first:
+      213: 6703885877736631023
+    second: Quick Attack Animation_60
+  - first:
+      213: 4692522147230657045
+    second: Quick Attack Animation_61
+  - first:
+      213: 2449062345771182005
+    second: Quick Attack Animation_62
+  - first:
+      213: 3152585872717218817
+    second: Quick Attack Animation_63
+  - first:
+      213: 5815746478778942666
+    second: Quick Attack Animation_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Quick Attack Animation_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 444
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4f7282714b29f70800000000000000
+      internalID: 9192607800967558314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 389
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1719339eb4d7152f0800000000000000
+      internalID: -985869078428937871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 444
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf61f61b3a0eb51b0800000000000000
+      internalID: -5666688712454498564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 389
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e0885690e6d6310800000000000000
+      internalID: 1399896045819268661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_4
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 444
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da224721f7c273940800000000000000
+      internalID: 5275734412769895085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 389
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d283f6f48d99a30800000000000000
+      internalID: 4222643961316519169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_6
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 444
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c59c200bb17414d0800000000000000
+      internalID: -3164779590158871100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 389
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1ae4b42945463b0800000000000000
+      internalID: -5520194255943982639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_8
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 444
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de5e654f14e03760800000000000000
+      internalID: 7435693807748669144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_9
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 388
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b48abc0d03dfef0800000000000000
+      internalID: -72848345639924877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 444
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443d82d3472860cb0800000000000000
+      internalID: -4898084108964932796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_11
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 388
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d8bfd744b97cc70800000000000000
+      internalID: 8991325899542203793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_12
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 444
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d78eddbdd0c991c0800000000000000
+      internalID: -4496350694346946608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_13
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 388
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a955838b5fcb0b270800000000000000
+      internalID: 8264313079768569242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_14
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 387
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf5170df2f521800800000000000000
+      internalID: 581631960849407964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 444
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065e5ee04dd249270800000000000000
+      internalID: 8256274405683225952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_16
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 444
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b21e9c0f03906bb0800000000000000
+      internalID: -4944790698007326029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_17
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 387
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4585284a3a56be2a0800000000000000
+      internalID: -6707155466524141484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_18
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 277
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d754232f6e62cdb0800000000000000
+      internalID: -4773131231449294893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_19
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 331
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1a5599bcd310f20800000000000000
+      internalID: 3387056339419505101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_20
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 331
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fbac661256e2a40800000000000000
+      internalID: 5345321001868246924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 278
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b9eb312ea1ec6b0800000000000000
+      internalID: -5274248555308082340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_22
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 331
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f37a72365c728b0800000000000000
+      internalID: -5176952216981389555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_23
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 278
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e87e9b526a316e0800000000000000
+      internalID: -1867966739465662839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_24
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 331
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d130b37d5768a0e00800000000000000
+      internalID: 1011768906978362141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_25
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 278
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178ad2ef85fe7aad0800000000000000
+      internalID: -2690919086830016399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_26
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 332
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb461582e7b1c4890800000000000000
+      internalID: -7472567453058243394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_27
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 278
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d240c67e29ba4ba10800000000000000
+      internalID: 1924351588230235181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_28
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 331
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41341893262c7f7f0800000000000000
+      internalID: -578780299966463212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_29
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 332
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec3d46c9be14f5c0800000000000000
+      internalID: -4182684370675614485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_30
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 332
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72fc97164b563340800000000000000
+      internalID: 4843158805885547130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_31
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 333
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0777bbb83eede420800000000000000
+      internalID: 2661044882280773389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_32
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 278
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a27319af77d7dc40800000000000000
+      internalID: 5537131210172756649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_33
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 278
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c970bf2677195f10800000000000000
+      internalID: 2258862484476688836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_34
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 278
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e41f6e7ffc55a80800000000000000
+      internalID: -8478642059816645064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_35
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 278
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83d21344161b6a20800000000000000
+      internalID: 3056561048381477773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febcd38097073f250800000000000000
+      internalID: 5977244795582401519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 166
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a26e2a71c39ac80800000000000000
+      internalID: -8311045565120632288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_38
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 222
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f49c09345524b0c0800000000000000
+      internalID: -4560979478954863372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 166
+        width: 38
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b2fd7825eaf3ff0800000000000000
+      internalID: -54133001015055547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_40
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 222
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfabdd62a52dcb380800000000000000
+      internalID: -8954050674478433539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_41
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 166
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90d655310a31a740800000000000000
+      internalID: 5161470424807559324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_42
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 222
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6ad6cc86d568d50800000000000000
+      internalID: 6739176597094246120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_43
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 166
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed21ff5fdbe0fa360800000000000000
+      internalID: 7182976139717972702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_44
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 222
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4e5730ebb470e90800000000000000
+      internalID: -7059590611406035725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_45
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 166
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f58bc6dec38cf0f0800000000000000
+      internalID: -1081844886085597706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_46
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 222
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2863960dc46d380800000000000000
+      internalID: -8946879151722822920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_47
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 166
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5958d3892ce5603f0800000000000000
+      internalID: -934955682761964139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_48
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 222
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42532d7e5e52f220800000000000000
+      internalID: 2518178901572932172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_49
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 167
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dc56720855d97b0800000000000000
+      internalID: -5215918784520008324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_50
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 222
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8118635de93beb0800000000000000
+      internalID: -4705242547092383566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_51
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 166
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bbd264a3cd75960800000000000000
+      internalID: 7590777839799876366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_52
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 222
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b50f706e069ae8b0800000000000000
+      internalID: -5122116637687872077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_53
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 166
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190c13f8ee224fae0800000000000000
+      internalID: -1516548766517051247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_54
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 55
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cc30419af35feb0800000000000000
+      internalID: -4686769841791316865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_55
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 111
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddfb1df705e34670800000000000000
+      internalID: 8521906742389112285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_56
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 55
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14acf8618cf0cc210800000000000000
+      internalID: 1354474939978074689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_57
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 110
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54bdd78828cf8090800000000000000
+      internalID: -8029979534174604196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_58
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 110
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a468931475cc61d0800000000000000
+      internalID: -3356090519962229599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_59
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 111
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6dc73a5fa79c7270800000000000000
+      internalID: 8249635396824583530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_60
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 111
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaef35efacf80d50800000000000000
+      internalID: 6703885877736631023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_61
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 111
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a2656e7003f1140800000000000000
+      internalID: 4692522147230657045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_62
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 111
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7e9705a31dcf120800000000000000
+      internalID: 2449062345771182005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_63
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 111
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104893be52c30cb20800000000000000
+      internalID: 3152585872717218817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quick Attack Animation_64
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 111
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4095bfb9ea5b050800000000000000
+      internalID: 5815746478778942666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Quick Attack Animation_0: 9192607800967558314
+      Quick Attack Animation_1: -985869078428937871
+      Quick Attack Animation_10: -4898084108964932796
+      Quick Attack Animation_11: 8991325899542203793
+      Quick Attack Animation_12: -4496350694346946608
+      Quick Attack Animation_13: 8264313079768569242
+      Quick Attack Animation_14: 581631960849407964
+      Quick Attack Animation_15: 8256274405683225952
+      Quick Attack Animation_16: -4944790698007326029
+      Quick Attack Animation_17: -6707155466524141484
+      Quick Attack Animation_18: -4773131231449294893
+      Quick Attack Animation_19: 3387056339419505101
+      Quick Attack Animation_2: -5666688712454498564
+      Quick Attack Animation_20: 5345321001868246924
+      Quick Attack Animation_21: -5274248555308082340
+      Quick Attack Animation_22: -5176952216981389555
+      Quick Attack Animation_23: -1867966739465662839
+      Quick Attack Animation_24: 1011768906978362141
+      Quick Attack Animation_25: -2690919086830016399
+      Quick Attack Animation_26: -7472567453058243394
+      Quick Attack Animation_27: 1924351588230235181
+      Quick Attack Animation_28: -578780299966463212
+      Quick Attack Animation_29: -4182684370675614485
+      Quick Attack Animation_3: 1399896045819268661
+      Quick Attack Animation_30: 4843158805885547130
+      Quick Attack Animation_31: 2661044882280773389
+      Quick Attack Animation_32: 5537131210172756649
+      Quick Attack Animation_33: 2258862484476688836
+      Quick Attack Animation_34: -8478642059816645064
+      Quick Attack Animation_35: 3056561048381477773
+      Quick Attack Animation_36: 5977244795582401519
+      Quick Attack Animation_37: -8311045565120632288
+      Quick Attack Animation_38: -4560979478954863372
+      Quick Attack Animation_39: -54133001015055547
+      Quick Attack Animation_4: 5275734412769895085
+      Quick Attack Animation_40: -8954050674478433539
+      Quick Attack Animation_41: 5161470424807559324
+      Quick Attack Animation_42: 6739176597094246120
+      Quick Attack Animation_43: 7182976139717972702
+      Quick Attack Animation_44: -7059590611406035725
+      Quick Attack Animation_45: -1081844886085597706
+      Quick Attack Animation_46: -8946879151722822920
+      Quick Attack Animation_47: -934955682761964139
+      Quick Attack Animation_48: 2518178901572932172
+      Quick Attack Animation_49: -5215918784520008324
+      Quick Attack Animation_5: 4222643961316519169
+      Quick Attack Animation_50: -4705242547092383566
+      Quick Attack Animation_51: 7590777839799876366
+      Quick Attack Animation_52: -5122116637687872077
+      Quick Attack Animation_53: -1516548766517051247
+      Quick Attack Animation_54: -4686769841791316865
+      Quick Attack Animation_55: 8521906742389112285
+      Quick Attack Animation_56: 1354474939978074689
+      Quick Attack Animation_57: -8029979534174604196
+      Quick Attack Animation_58: -3356090519962229599
+      Quick Attack Animation_59: 8249635396824583530
+      Quick Attack Animation_6: -3164779590158871100
+      Quick Attack Animation_60: 6703885877736631023
+      Quick Attack Animation_61: 4692522147230657045
+      Quick Attack Animation_62: 2449062345771182005
+      Quick Attack Animation_63: 3152585872717218817
+      Quick Attack Animation_64: 5815746478778942666
+      Quick Attack Animation_7: -5520194255943982639
+      Quick Attack Animation_8: 7435693807748669144
+      Quick Attack Animation_9: -72848345639924877
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

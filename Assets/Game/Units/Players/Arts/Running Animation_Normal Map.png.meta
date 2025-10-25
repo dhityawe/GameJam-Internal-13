@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: fc13a0df272712546929b373ecc9690e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5359830243586936809
+    second: Running Animation_Normal Map_0
+  - first:
+      213: 3692109256385646473
+    second: Running Animation_Normal Map_1
+  - first:
+      213: 6062996296616465627
+    second: Running Animation_Normal Map_2
+  - first:
+      213: -5536970263958236447
+    second: Running Animation_Normal Map_3
+  - first:
+      213: -8913652041898788513
+    second: Running Animation_Normal Map_4
+  - first:
+      213: 1275911758261352998
+    second: Running Animation_Normal Map_5
+  - first:
+      213: 2673011805738475198
+    second: Running Animation_Normal Map_6
+  - first:
+      213: -1075615304721936583
+    second: Running Animation_Normal Map_7
+  - first:
+      213: -2182556360232430611
+    second: Running Animation_Normal Map_8
+  - first:
+      213: -2911367089290769541
+    second: Running Animation_Normal Map_9
+  - first:
+      213: 7211419067420481699
+    second: Running Animation_Normal Map_10
+  - first:
+      213: -3735843350521333456
+    second: Running Animation_Normal Map_11
+  - first:
+      213: -74197819576413819
+    second: Running Animation_Normal Map_12
+  - first:
+      213: -6891725262960805658
+    second: Running Animation_Normal Map_13
+  - first:
+      213: 2062647572908828657
+    second: Running Animation_Normal Map_14
+  - first:
+      213: 5726355843218972741
+    second: Running Animation_Normal Map_15
+  - first:
+      213: -427063092643682649
+    second: Running Animation_Normal Map_16
+  - first:
+      213: 2405548293150266863
+    second: Running Animation_Normal Map_17
+  - first:
+      213: 3030613485305605450
+    second: Running Animation_Normal Map_18
+  - first:
+      213: 2394205916750393298
+    second: Running Animation_Normal Map_19
+  - first:
+      213: -8279447117886924187
+    second: Running Animation_Normal Map_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 305
+        width: 68
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710fa928ace0e95b0800000000000000
+      internalID: -5359830243586936809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 402
+        width: 48
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f4cca9ec10d3330800000000000000
+      internalID: 3692109256385646473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 308
+        width: 70
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd455563207142450800000000000000
+      internalID: 6062996296616465627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 402
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e25edc81eab823b0800000000000000
+      internalID: -5536970263958236447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 305
+        width: 68
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59ff27c1b85c4480800000000000000
+      internalID: -8913652041898788513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 402
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a79ebebf2f4b110800000000000000
+      internalID: 1275911758261352998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 302
+        width: 61
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe97793312781520800000000000000
+      internalID: 2673011805738475198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_7
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 401
+        width: 56
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f43174495a211f0800000000000000
+      internalID: -1075615304721936583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_8
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 400
+        width: 60
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de39316dd8006b1e0800000000000000
+      internalID: -2182556360232430611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_9
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 202
+        width: 53
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b8f00be0fb897d0800000000000000
+      internalID: -2911367089290769541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 302
+        width: 51
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a893102f6b141460800000000000000
+      internalID: 7211419067420481699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_11
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 200
+        width: 53
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039bbab144e972cc0800000000000000
+      internalID: -3735843350521333456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 202
+        width: 55
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5811a09e97568fef0800000000000000
+      internalID: -74197819576413819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_13
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 202
+        width: 58
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8b2a3236cab50a0800000000000000
+      internalID: -6891725262960805658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 203
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f76d080a0fff9c10800000000000000
+      internalID: 2062647572908828657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_15
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 104
+        width: 59
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540ac84cc4a187f40800000000000000
+      internalID: 5726355843218972741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 107
+        width: 61
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a62b424164c21af0800000000000000
+      internalID: -427063092643682649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_17
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 105
+        width: 59
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5d44f6d69326120800000000000000
+      internalID: 2405548293150266863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_18
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 103
+        width: 54
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d262378e6ee0a20800000000000000
+      internalID: 3030613485305605450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_19
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 101
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfab03a89de93120800000000000000
+      internalID: 2394205916750393298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Animation_Normal Map_20
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ad7b176be791d80800000000000000
+      internalID: -8279447117886924187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Running Animation_Normal Map_0: -5359830243586936809
+      Running Animation_Normal Map_1: 3692109256385646473
+      Running Animation_Normal Map_10: 7211419067420481699
+      Running Animation_Normal Map_11: -3735843350521333456
+      Running Animation_Normal Map_12: -74197819576413819
+      Running Animation_Normal Map_13: -6891725262960805658
+      Running Animation_Normal Map_14: 2062647572908828657
+      Running Animation_Normal Map_15: 5726355843218972741
+      Running Animation_Normal Map_16: -427063092643682649
+      Running Animation_Normal Map_17: 2405548293150266863
+      Running Animation_Normal Map_18: 3030613485305605450
+      Running Animation_Normal Map_19: 2394205916750393298
+      Running Animation_Normal Map_2: 6062996296616465627
+      Running Animation_Normal Map_20: -8279447117886924187
+      Running Animation_Normal Map_3: -5536970263958236447
+      Running Animation_Normal Map_4: -8913652041898788513
+      Running Animation_Normal Map_5: 1275911758261352998
+      Running Animation_Normal Map_6: 2673011805738475198
+      Running Animation_Normal Map_7: -1075615304721936583
+      Running Animation_Normal Map_8: -2182556360232430611
+      Running Animation_Normal Map_9: -2911367089290769541
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
