@@ -112,6 +112,11 @@ namespace Game.Units.Players
 
         private void OnJumpPerformed(InputAction.CallbackContext context)
         {
+            // If dashing, cancel dash and jump immediately
+            if (playerDash != null && playerDash.IsDashing)
+            {
+                playerDash.ForceEndDash();
+            }
             if (playerJump != null)
             {
                 playerJump.Jump();
