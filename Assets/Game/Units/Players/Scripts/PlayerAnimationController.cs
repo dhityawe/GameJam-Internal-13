@@ -1,14 +1,12 @@
 using UnityEngine;
+using System;
 using GabrielBigardi.SpriteAnimator;
 
 namespace Game.Units.Players
 {
 public class PlayerAnimationController : MonoBehaviour
+    // Track which attack animation to play next
 {
-    // ...existing code...
-    /// <summary>
-    /// Immediately break out of any one-shot animation and sync to the correct state (idle/move/air).
-    /// </summary>
     public void ForceImmediateStateSync()
     {
         isTransitioning = false;
@@ -36,8 +34,11 @@ public class PlayerAnimationController : MonoBehaviour
     private bool forceSyncNextFrame = false;
 
     // Delegates to check if player is moving/grounded (set by PlayerMovement/PlayerJump)
-    public System.Func<bool> IsPlayerMoving;
-    public System.Func<bool> IsPlayerGrounded;
+    public Func<bool> IsPlayerMoving;
+    public Func<bool> IsPlayerGrounded;
+    private bool playAttack1Next = true;
+    public bool IsBlocking { get; set; }
+
 
     private void Awake()
     {
@@ -135,24 +136,23 @@ public class PlayerAnimationController : MonoBehaviour
                 break;
             case AnimState.Attack:
                 isTransitioning = true;
-                playerAnim.Play("Attack1").SetOnComplete(() => {
+                string attackAnimName = playAttack1Next ? "Attack1" : "Attack2";
+                playAttack1Next = !playAttack1Next;
+                playerAnim.Play(attackAnimName).SetOnComplete(() => {
                     isTransitioning = false;
                     // After one-shot, allow state sync
                 });
                 break;
             case AnimState.QuickAttack:
                 isTransitioning = true;
-                playerAnim.Play("Attack1").SetOnComplete(() => {
+                playerAnim.Play("QuickAttack").SetOnComplete(() => {
                     isTransitioning = false;
                     // After one-shot, allow state sync
                 });
                 break;
             case AnimState.Block:
-                isTransitioning = true;
-                playerAnim.Play("Block").SetOnComplete(() =>
-                {
-                    isTransitioning = false;
-                });
+                playerAnim.PlayIfNotPlaying("Block");
+                isTransitioning = false;
                 break;
         }
     }
@@ -163,6 +163,12 @@ public class PlayerAnimationController : MonoBehaviour
     /// </summary>
     public void SyncToPlayerState()
     {
+        // Check if blocking (set by PlayerBlock)
+        if (IsBlocking)
+        {
+            PlayState(AnimState.Block);
+            return;
+        }
         if (IsPlayerGrounded == null || IsPlayerMoving == null)
         {
             Debug.LogWarning("PlayerAnimationController: IsPlayerGrounded or IsPlayerMoving delegate not set!", this);

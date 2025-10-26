@@ -11,6 +11,7 @@ namespace Game.Units.Players
     [SerializeField] private PlayerJump playerJump;
     [SerializeField] private PlayerDash playerDash;
     [SerializeField] private PlayerAttack playerAttack;
+    [SerializeField] private PlayerBlock playerBlock;
 
 
     private PlayerInput playerInput;
@@ -87,6 +88,7 @@ namespace Game.Units.Players
         private void OnAttackPerformed(InputAction.CallbackContext context)
         {
             Debug.Log("[PlayerController] OnAttackPerformed called");
+            if (playerBlock != null && playerBlock.IsBlocking) return;
             if (playerAttack != null)
             {
                 playerAttack.Attack();
@@ -95,18 +97,22 @@ namespace Game.Units.Players
 
         private void Update()
         {
+            if (playerBlock != null && playerBlock.IsBlocking)
+            {
+                // While blocking, prevent all actions
+                if (playerMovement != null) playerMovement.SetMovementInput(Vector2.zero);
+                return;
+            }
             if (playerDash != null)
             {
                 playerDash.UpdateDash();
             }
-
             bool wasGrounded = false;
             if (playerJump != null)
             {
                 wasGrounded = playerJump.IsGrounded();
                 playerJump.UpdateJump();
             }
-
             // Reset dash when landing
             if (playerDash != null && playerJump != null)
             {
@@ -115,7 +121,6 @@ namespace Game.Units.Players
                     playerDash.OnLanded();
                 }
             }
-
             if (playerMovement != null && moveAction != null)
             {
                 // Disable movement input while dashing
@@ -142,6 +147,7 @@ namespace Game.Units.Players
 
         private void OnJumpPerformed(InputAction.CallbackContext context)
         {
+            if (playerBlock != null && playerBlock.IsBlocking) return;
             // If dashing, cancel dash and jump immediately
             if (playerDash != null && playerDash.IsDashing)
             {

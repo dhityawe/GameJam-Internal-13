@@ -59,6 +59,12 @@ namespace Game.Units.Players
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
             foreach (var enemy in hitEnemies)
             {
+                // If BossDummyDemo, flash red
+                var bossDummy = enemy.GetComponent<BossDummyDemo>();
+                if (bossDummy != null)
+                {
+                    bossDummy.FlashRed();
+                }
                 //? Try to call TakeDamage on the enemy
                 // var damageable = enemy.GetComponent<IDamageable>();
                 // if (damageable != null)

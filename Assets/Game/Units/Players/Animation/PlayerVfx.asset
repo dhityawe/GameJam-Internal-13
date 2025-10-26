@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a77fafcc6bd2ee94ebe9ac341b986e7a, type: 3}
+  m_Name: PlayerVfx
+  m_EditorClassIdentifier: 
+  SpriteAnimations:
+  - Name: Hurt
+    FPS: 12
+    Frames:
+    - {fileID: 376116825033521229, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 7377978015548117070, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -5488716384679650365, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 3241734356204068179, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -4540516090396719794, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -3566258723250690909, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 770923321593615040, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -7710964206737517224, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 8197361162336872013, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -7102797803753606454, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 5128304198451080230, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 3252881787832310321, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -6983852637827630034, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -2557674112840935948, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 3938449334962731643, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -2042043783483915133, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 5155732438078165961, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 4244855261752243318, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -5233444463024436984, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -4383231307377435809, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -5865329020703735946, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 6335074621335052276, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -709486150184260669, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 6491569036629670388, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -5028940537929875260, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 4542338327870134135, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    SpriteAnimationType: 0

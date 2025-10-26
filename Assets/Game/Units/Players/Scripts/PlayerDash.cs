@@ -1,13 +1,10 @@
 using UnityEngine;
+using System;
 using UnityEngine.InputSystem;
-
 namespace Game.Units.Players
 {
     public class PlayerDash : MonoBehaviour
     {
-        /// <summary>
-        /// Immediately cancels the dash and restores normal state. Used for interruptions (block, attack, etc).
-        /// </summary>
         public void CancelDash()
         {
             if (isDashing)
@@ -21,7 +18,7 @@ namespace Game.Units.Players
         [SerializeField] private float dashSpeedMultiplier = 2f;
         [SerializeField] private int maxDashes = 1;
         [SerializeField] private float dashBufferTime = 0.1f;
-        [SerializeField] private float dashEndDeceleration = 40f;
+        // [SerializeField] private float dashEndDeceleration = 40f;
 
         private PlayerAnimationController playerAnimationController;
         private PlayerAttack playerAttack;
@@ -33,6 +30,9 @@ namespace Game.Units.Players
         private PlayerInput playerInput;
         private InputAction dashAction;
         private InputAction moveAction;
+
+        public event Action OnStartDash;
+        public event Action OnEndDash;
 
         private bool isDashing = false;
         private float dashTimer = 0f;
@@ -123,12 +123,11 @@ namespace Game.Units.Players
 
         private void StartDash()
         {
+            OnStartDash?.Invoke();
             isDashing = true;
             dashTimer = dashDuration;
             dashCooldownTimer = dashCooldown;
             dashesLeft--;
-
-            // Cancel other actions
             playerAttack.CancelAttack();
 
             // Play dash animation
@@ -153,13 +152,13 @@ namespace Game.Units.Players
 
         private void EndDash()
         {
+            OnEndDash?.Invoke();
             isDashing = false;
             // Restore gravity
             if (rb != null)
             {
                 rb.gravityScale = originalGravityScale;
             }
-            // Play correct animation after dash ends
             if (playerAnimationController != null)
             {
                 bool grounded = playerJump != null ? playerJump.IsGrounded() : false;
@@ -168,7 +167,6 @@ namespace Game.Units.Players
                 else
                     playerAnimationController.OnAirAnim();
             }
-            // Do not modify velocity here; let normal movement/gravity take over
         }
 
         // Call this from PlayerController when grounded

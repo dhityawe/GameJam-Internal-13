@@ -49,7 +49,12 @@ namespace Game.Units.Players
         /// </summary>
         public void CancelMoving()
         {
-            if (!isCancellingMove && rb != null)
+            if (cancelMoveCoroutine != null)
+            {
+                StopCoroutine(cancelMoveCoroutine);
+                cancelMoveCoroutine = null;
+            }
+            if (rb != null)
                 cancelMoveCoroutine = StartCoroutine(CancelMovingRoutine());
         }
 

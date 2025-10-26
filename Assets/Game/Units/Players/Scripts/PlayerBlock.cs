@@ -52,6 +52,8 @@ namespace Game.Units.Players
         private void OnBlockPerformed(InputAction.CallbackContext context)
         {
             isBlocking = true;
+            if (playerAnimationController != null)
+                playerAnimationController.IsBlocking = true;
             playerAttack.CancelAttack();
             playerDash.CancelDash();
             playerMovement.CancelMoving();
@@ -61,6 +63,8 @@ namespace Game.Units.Players
         private void OnBlockCanceled(InputAction.CallbackContext context)
         {
             isBlocking = false;
+            if (playerAnimationController != null)
+                playerAnimationController.IsBlocking = false;
             // Immediately break out of block animation and sync to correct state
             playerAnimationController.ForceImmediateStateSync();
         }

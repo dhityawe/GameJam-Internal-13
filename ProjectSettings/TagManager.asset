@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -11,7 +12,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -49,6 +50,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 2431374815
+    locked: 0
+  - name: Projectiles
+    uniqueID: 1212556993
     locked: 0
   - name: VFX
     uniqueID: 504875895
