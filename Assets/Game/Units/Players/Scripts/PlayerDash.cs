@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,8 +5,10 @@ namespace Game.Units.Players
 {
     public class PlayerDash : MonoBehaviour
     {
-        // Allow external force to end dash (e.g. for jump cancel)
-        public void ForceEndDash()
+        /// <summary>
+        /// Immediately cancels the dash and restores normal state. Used for interruptions (block, attack, etc).
+        /// </summary>
+        public void CancelDash()
         {
             if (isDashing)
             {

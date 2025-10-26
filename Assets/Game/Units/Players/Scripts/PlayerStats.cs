@@ -15,6 +15,7 @@ namespace Game.Units.Players
 
     public int MaxHealth => maxHealth;
     public int Attack => attack;
+        public int Defense => defense;
     // public int Defense => defense;
     // public float MoveSpeed => moveSpeed;
     // public float CritChance => critChance;

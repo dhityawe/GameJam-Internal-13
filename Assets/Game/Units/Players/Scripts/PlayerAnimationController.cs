@@ -1,8 +1,20 @@
 using UnityEngine;
 using GabrielBigardi.SpriteAnimator;
 
+namespace Game.Units.Players
+{
 public class PlayerAnimationController : MonoBehaviour
 {
+    // ...existing code...
+    /// <summary>
+    /// Immediately break out of any one-shot animation and sync to the correct state (idle/move/air).
+    /// </summary>
+    public void ForceImmediateStateSync()
+    {
+        isTransitioning = false;
+        forceSyncNextFrame = false;
+        SyncToPlayerState();
+    }
     [Tooltip("Main player SpriteAnimator")] public SpriteAnimator playerAnim;
     [Tooltip("Optional effect SpriteAnimator")] public SpriteAnimator playerEffect;
 
@@ -185,5 +197,6 @@ public class PlayerAnimationController : MonoBehaviour
     public void AttackAnim() => PlayState(AnimState.Attack);
     public void QuickAttack() => PlayState(AnimState.QuickAttack);
     public void Block() => PlayState(AnimState.Block);
+}
 }
 

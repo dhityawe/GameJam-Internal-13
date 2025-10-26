@@ -145,7 +145,7 @@ namespace Game.Units.Players
             // If dashing, cancel dash and jump immediately
             if (playerDash != null && playerDash.IsDashing)
             {
-                playerDash.ForceEndDash();
+                playerDash.CancelDash();
             }
             if (playerJump != null)
             {
