@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 
 namespace Game.Units.Players
 {
-
     public class PlayerDash : MonoBehaviour
     {
         // Allow external force to end dash (e.g. for jump cancel)
@@ -23,9 +22,12 @@ namespace Game.Units.Players
         [SerializeField] private float dashBufferTime = 0.1f;
         [SerializeField] private float dashEndDeceleration = 40f;
 
-    private Rigidbody2D rb;
-    private float originalGravityScale;
+        private PlayerAnimationController playerAnimationController;
+
+        private Rigidbody2D rb;
+        private float originalGravityScale;
         private PlayerMovement playerMovement;
+        private PlayerJump playerJump;
         private PlayerInput playerInput;
         private InputAction dashAction;
         private InputAction moveAction;
@@ -44,6 +46,8 @@ namespace Game.Units.Players
             rb = rigidbody;
             playerInput = input;
             playerMovement = GetComponent<PlayerMovement>();
+            playerJump = GetComponent<PlayerJump>();
+            playerAnimationController = GetComponent<PlayerAnimationController>();
             dashesLeft = maxDashes;
             SetupInputActions();
         }
@@ -71,7 +75,7 @@ namespace Game.Units.Players
             dashBufferCounter = dashBufferTime;
         }
 
-    public void UpdateDash()
+        public void UpdateDash()
         {
             if (dashCooldownTimer > 0)
                 dashCooldownTimer -= Time.deltaTime;
@@ -121,6 +125,10 @@ namespace Game.Units.Players
             dashCooldownTimer = dashCooldown;
             dashesLeft--;
 
+            // Play dash animation
+            if (playerAnimationController != null)
+                playerAnimationController.DashAnim();
+
             // 8-directional dash based on input
             dashDirection = moveAction.ReadValue<Vector2>();
             if (dashDirection == Vector2.zero)
@@ -144,6 +152,15 @@ namespace Game.Units.Players
             if (rb != null)
             {
                 rb.gravityScale = originalGravityScale;
+            }
+            // Play correct animation after dash ends
+            if (playerAnimationController != null)
+            {
+                bool grounded = playerJump != null ? playerJump.IsGrounded() : false;
+                if (grounded)
+                    playerAnimationController.IdleAnim();
+                else
+                    playerAnimationController.OnAirAnim();
             }
             // Do not modify velocity here; let normal movement/gravity take over
         }

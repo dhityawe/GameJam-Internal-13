@@ -3,25 +3,160 @@ using GabrielBigardi.SpriteAnimator;
 
 public class PlayerAnimationController : MonoBehaviour
 {
-    public SpriteAnimator playerAnim;
-    public SpriteAnimator playerEffect;
+    [Tooltip("Main player SpriteAnimator")] public SpriteAnimator playerAnim;
+    [Tooltip("Optional effect SpriteAnimator")] public SpriteAnimator playerEffect;
 
-    public void IdleAnim()
+    public enum AnimState
     {
-        playerAnim.PlayIfNotPlaying("Idle");
-    }
-    public void MovingAnim()
-    {
-        playerAnim.PlayIfNotPlaying("Move");
+        Idle,
+        Move,
+        Jump,
+        Air,
+        Land,
+        Dash,
+        Attack
     }
 
-    public void AttackAnim()
+    private AnimState currentState = AnimState.Idle;
+    private bool isTransitioning = false;
+    private bool forceSyncNextFrame = false;
+
+    // Delegates to check if player is moving/grounded (set by PlayerMovement/PlayerJump)
+    public System.Func<bool> IsPlayerMoving;
+    public System.Func<bool> IsPlayerGrounded;
+
+    private void Awake()
     {
-        playerAnim.PlayIfNotPlaying("Attack");
+        if (playerAnim == null)
+        {
+            Debug.LogWarning("PlayerAnimationController: playerAnim is not assigned!", this);
+        }
     }
-    public void DashAnim()
+
+    private void Update()
     {
-        playerAnim.PlayIfNotPlaying("Dash");
+        // Only sync to player state if not in a one-shot animation
+        if (!isTransitioning)
+        {
+            SyncToPlayerState();
+        }
+        else if (forceSyncNextFrame)
+        {
+            // If a force sync was requested, wait until one-shot completes
+            forceSyncNextFrame = false;
+        }
     }
+
+    /// <summary>
+    /// Call this from other scripts when a gameplay state changes (move input, grounded, etc.)
+    /// </summary>
+    public void RequestStateSync()
+    {
+        // Only allow force sync if not in a one-shot; otherwise, will sync after one-shot completes
+        forceSyncNextFrame = true;
+    }
+
+    /// <summary>
+    /// Play the given animation state, handling one-shots and transitions.
+    /// </summary>
+    private void PlayState(AnimState state)
+    {
+        if (playerAnim == null) return;
+
+        // Block all transitions except looping states if a one-shot is playing
+        if (isTransitioning)
+        {
+            // Only allow Idle, Move, Air to interrupt if not in a one-shot
+            if (state != AnimState.Idle && state != AnimState.Move && state != AnimState.Air)
+                return;
+        }
+
+        // Don't replay looping anims if already playing
+        if (state == AnimState.Idle || state == AnimState.Move || state == AnimState.Air)
+        {
+            if (currentState == state)
+                return;
+        }
+        // For one-shot states (Jump, Land, Dash, Attack), always play even if already in that state
+
+        currentState = state;
+        switch (state)
+        {
+            case AnimState.Idle:
+                playerAnim.PlayIfNotPlaying("Idle");
+                isTransitioning = false;
+                break;
+            case AnimState.Move:
+                playerAnim.PlayIfNotPlaying("Move");
+                isTransitioning = false;
+                break;
+            case AnimState.Jump:
+                isTransitioning = true;
+                playerAnim.Play("OnJump").SetOnComplete(() => {
+                    isTransitioning = false;
+                    // After one-shot, allow state sync
+                });
+                break;
+            case AnimState.Air:
+                playerAnim.PlayIfNotPlaying("OnAir");
+                isTransitioning = false;
+                break;
+            case AnimState.Land:
+                isTransitioning = true;
+                playerAnim.Play("OnGround").SetOnComplete(() => {
+                    isTransitioning = false;
+                    // After one-shot, allow state sync
+                });
+                break;
+            case AnimState.Dash:
+                isTransitioning = true;
+                playerAnim.Play("Dash").SetOnComplete(() => {
+                    isTransitioning = false;
+                    // After one-shot, allow state sync
+                });
+                break;
+            case AnimState.Attack:
+                isTransitioning = true;
+                playerAnim.Play("Attack1").SetOnComplete(() => {
+                    isTransitioning = false;
+                    // After one-shot, allow state sync
+                });
+                break;
+        }
+    }
+
+    /// <summary>
+    /// Always sync to the true player state after a one-shot animation.
+    /// Priority: Air > Move (if grounded and moving) > Idle (if grounded and not moving)
+    /// </summary>
+    public void SyncToPlayerState()
+    {
+        if (IsPlayerGrounded == null || IsPlayerMoving == null)
+        {
+            Debug.LogWarning("PlayerAnimationController: IsPlayerGrounded or IsPlayerMoving delegate not set!", this);
+            return;
+        }
+        if (!IsPlayerGrounded())
+        {
+            PlayState(AnimState.Air);
+        }
+        else if (IsPlayerMoving())
+        {
+            PlayState(AnimState.Move);
+        }
+        else
+        {
+            PlayState(AnimState.Idle);
+        }
+    }
+
+    // Public API for one-shot triggers (should only be called for actual events)
+    public void IdleAnim() => PlayState(AnimState.Idle); // Only if you want to force idle
+    public void MovingAnim() => PlayState(AnimState.Move); // Only if you want to force move
+    public void OnJumpAnim() => PlayState(AnimState.Jump);
+    public void OnAirAnim() => PlayState(AnimState.Air);
+    public void OnGroundAnim() => PlayState(AnimState.Land);
+    public void DashAnim() => PlayState(AnimState.Dash);
+    public void AttackAnim() => PlayState(AnimState.Attack);
 }
 

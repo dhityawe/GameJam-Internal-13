@@ -25,6 +25,7 @@ namespace Game.Units.Players
 
         private Rigidbody2D rb;
         private PlayerMovement playerMovement;
+        private PlayerAnimationController playerAnimationController;
 
         private bool isGrounded;
         private float coyoteTimeCounter;
@@ -36,6 +37,11 @@ namespace Game.Units.Players
         {
             rb = rigidbody;
             playerMovement = GetComponent<PlayerMovement>();
+            playerAnimationController = GetComponent<PlayerAnimationController>();
+            if (playerAnimationController != null)
+            {
+                playerAnimationController.IsPlayerGrounded = IsGrounded;
+            }
         }
 
         public void UpdateJump()
@@ -45,6 +51,7 @@ namespace Game.Units.Players
             ApplyGravityModifiers();
         }
 
+        private bool wasGroundedLastFrame = true;
         private void CheckGrounded()
         {
             if (groundCheck != null)
@@ -60,6 +67,18 @@ namespace Game.Units.Players
             {
                 playerMovement.SetGroundedState(isGrounded);
             }
+
+            // Animation: OnGround when landing
+            if (isGrounded && !wasGroundedLastFrame)
+            {
+                // Reset jump state on landing
+                isJumping = false;
+                if (playerAnimationController != null)
+                {
+                    playerAnimationController.OnGroundAnim();
+                }
+            }
+            wasGroundedLastFrame = isGrounded;
 
             if (isGrounded && !isJumping)
             {
@@ -96,6 +115,10 @@ namespace Game.Units.Players
             {
                 PerformJump(doubleJumpForce);
             }
+            else
+            {
+                Debug.Log("[PlayerJump] Jump conditions not met");
+            }
         }
 
         private void PerformJump(float force)
@@ -109,6 +132,12 @@ namespace Game.Units.Players
             coyoteTimeCounter = 0f;
             jumpBufferCounter = 0f;
             isJumping = true;
+
+            // Animation: OnJump (state machine will handle transition to OnAir)
+            if (playerAnimationController != null)
+            {
+                playerAnimationController.OnJumpAnim();
+            }
         }
 
         public void CancelJump()
@@ -127,7 +156,7 @@ namespace Game.Units.Players
             {
                 rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallGravityMultiplier - 1) * Time.deltaTime;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Max(rb.linearVelocity.y, -maxFallSpeed));
-                
+
                 if (isJumping && rb.linearVelocity.y < -1f)
                 {
                     isJumping = false;

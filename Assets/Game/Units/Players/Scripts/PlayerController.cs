@@ -6,14 +6,19 @@ namespace Game.Units.Players
     [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput))]
     public class PlayerController : MonoBehaviour
     {
+
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private PlayerJump playerJump;
     [SerializeField] private PlayerDash playerDash;
+    [SerializeField] private PlayerAttack playerAttack;
+
 
     private PlayerInput playerInput;
     private Rigidbody2D rb;
     private InputAction moveAction;
     private InputAction jumpAction;
+    private InputAction attackAction;
+
 
         private void Awake()
         {
@@ -23,6 +28,7 @@ namespace Game.Units.Players
             InitializeComponents();
             SetupInputActions();
         }
+
 
         private void InitializeComponents()
         {
@@ -42,17 +48,22 @@ namespace Game.Units.Players
             }
         }
 
+
         private void SetupInputActions()
         {
             if (playerInput != null)
             {
                 moveAction = playerInput.actions["Move"];
                 jumpAction = playerInput.actions["Jump"];
+                attackAction = playerInput.actions["Attack"];
 
                 jumpAction.performed += OnJumpPerformed;
                 jumpAction.canceled += OnJumpCanceled;
+                if (attackAction != null)
+                    attackAction.performed += OnAttackPerformed;
             }
         }
+
 
         private void OnDestroy()
         {
@@ -60,6 +71,17 @@ namespace Game.Units.Players
             {
                 jumpAction.performed -= OnJumpPerformed;
                 jumpAction.canceled -= OnJumpCanceled;
+            }
+            if (attackAction != null)
+            {
+                attackAction.performed -= OnAttackPerformed;
+            }
+        }
+        private void OnAttackPerformed(InputAction.CallbackContext context)
+        {
+            if (playerAttack != null)
+            {
+                playerAttack.Attack();
             }
         }
 

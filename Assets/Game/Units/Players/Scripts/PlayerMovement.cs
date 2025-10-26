@@ -18,12 +18,20 @@ namespace Game.Units.Players
         private Vector2 movementInput;
         private bool isGrounded;
 
-        [Header("Reference")]
-        [SerializeField] private PlayerAnimationController playerAnimationController;
+        private PlayerAnimationController playerAnimationController;
 
         public void Initialize(Rigidbody2D rigidbody)
         {
             rb = rigidbody;
+        }
+
+        void Start()
+        {
+            playerAnimationController = GetComponent<PlayerAnimationController>();
+            if (playerAnimationController != null)
+            {
+                playerAnimationController.IsPlayerMoving = IsMoving;
+            }
         }
 
         public void SetMovementInput(Vector2 input)
@@ -42,22 +50,22 @@ namespace Game.Units.Players
             FlipSprite();
         }
 
+        private bool wasMoving = false;
         private void ApplyMovement()
         {
-            if (Mathf.Abs(movementInput.x) > 0.01f)
+            bool isCurrentlyMoving = Mathf.Abs(movementInput.x) > 0.01f;
+            // Only request state sync if movement state changes while grounded
+            if (isGrounded && isCurrentlyMoving != wasMoving && playerAnimationController != null)
             {
-                playerAnimationController.MovingAnim();
+                playerAnimationController.RequestStateSync();
             }
-            else
-            {
-                playerAnimationController.IdleAnim();
-            }
-            
+            wasMoving = isCurrentlyMoving;
+
             float targetSpeed = movementInput.x * moveSpeed;
             float speedDifference = targetSpeed - rb.linearVelocity.x;
 
             float accelerationRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
-            
+
             if (!isGrounded)
             {
                 accelerationRate *= airControlMultiplier;
@@ -78,6 +86,10 @@ namespace Game.Units.Players
 
         public void SetGroundedState(bool grounded)
         {
+            if (isGrounded != grounded && playerAnimationController != null)
+            {
+                playerAnimationController.RequestStateSync();
+            }
             isGrounded = grounded;
         }
 
