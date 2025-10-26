@@ -14,7 +14,9 @@ public class PlayerAnimationController : MonoBehaviour
         Air,
         Land,
         Dash,
-        Attack
+        Attack,
+        QuickAttack,
+        Block
     }
 
     private AnimState currentState = AnimState.Idle;
@@ -63,12 +65,16 @@ public class PlayerAnimationController : MonoBehaviour
     {
         if (playerAnim == null) return;
 
-        // Block all transitions except looping states if a one-shot is playing
-        if (isTransitioning)
+        // Attack is always allowed to override any animation (highest priority one-shot)
+        if (state != AnimState.Attack)
         {
-            // Only allow Idle, Move, Air to interrupt if not in a one-shot
-            if (state != AnimState.Idle && state != AnimState.Move && state != AnimState.Air)
-                return;
+            // Block all transitions except looping states if a one-shot is playing
+            if (isTransitioning)
+            {
+                // Only allow Idle, Move, Air to interrupt if not in a one-shot
+                if (state != AnimState.Idle && state != AnimState.Move && state != AnimState.Air)
+                    return;
+            }
         }
 
         // Don't replay looping anims if already playing
@@ -122,6 +128,20 @@ public class PlayerAnimationController : MonoBehaviour
                     // After one-shot, allow state sync
                 });
                 break;
+            case AnimState.QuickAttack:
+                isTransitioning = true;
+                playerAnim.Play("Attack1").SetOnComplete(() => {
+                    isTransitioning = false;
+                    // After one-shot, allow state sync
+                });
+                break;
+            case AnimState.Block:
+                isTransitioning = true;
+                playerAnim.Play("Block").SetOnComplete(() =>
+                {
+                    isTransitioning = false;
+                });
+                break;
         }
     }
 
@@ -156,7 +176,14 @@ public class PlayerAnimationController : MonoBehaviour
     public void OnJumpAnim() => PlayState(AnimState.Jump);
     public void OnAirAnim() => PlayState(AnimState.Air);
     public void OnGroundAnim() => PlayState(AnimState.Land);
-    public void DashAnim() => PlayState(AnimState.Dash);
+    public void DashAnim()
+    {
+        // Forcefully allow dash to override any animation
+        isTransitioning = false;
+        PlayState(AnimState.Dash);
+    }
     public void AttackAnim() => PlayState(AnimState.Attack);
+    public void QuickAttack() => PlayState(AnimState.QuickAttack);
+    public void Block() => PlayState(AnimState.Block);
 }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 namespace Game.Units.Players
 {
@@ -14,11 +15,15 @@ namespace Game.Units.Players
         [Header("Air Control")]
         [SerializeField] private float airControlMultiplier = 0.7f;
 
-        private Rigidbody2D rb;
-        private Vector2 movementInput;
-        private bool isGrounded;
+    private Rigidbody2D rb;
+    private Vector2 movementInput;
+    private bool isGrounded;
 
-        private PlayerAnimationController playerAnimationController;
+    private PlayerAnimationController playerAnimationController;
+
+    // Cancel move transition duration is now local to CancelMovingRoutine
+    private bool isCancellingMove = false;
+    private Coroutine cancelMoveCoroutine = null;
 
         public void Initialize(Rigidbody2D rigidbody)
         {
@@ -36,7 +41,60 @@ namespace Game.Units.Players
 
         public void SetMovementInput(Vector2 input)
         {
-            movementInput = input;
+            if (!isCancellingMove)
+                movementInput = input;
+        }
+        /// <summary>
+        /// Interrupts movement and decelerates to zero over speedTransition seconds, ignoring input during that time.
+        /// </summary>
+        public void CancelMoving()
+        {
+            if (!isCancellingMove && rb != null)
+                cancelMoveCoroutine = StartCoroutine(CancelMovingRoutine());
+        }
+
+        /// <summary>
+        /// Immediately stops the CancelMoving routine and releases input lock.
+        /// </summary>
+        public void StopCancelMoving()
+        {
+            if (cancelMoveCoroutine != null)
+            {
+                StopCoroutine(cancelMoveCoroutine);
+                cancelMoveCoroutine = null;
+            }
+            isCancellingMove = false;
+        }
+
+    private IEnumerator CancelMovingRoutine()
+        {
+            isCancellingMove = true;
+            movementInput = Vector2.zero;
+            float duration = 0.5f; // Total input lockout
+            float speedTransition = 0.35f; // How fast velocity reaches zero
+            float timer = 0f;
+            float startVel = rb.linearVelocity.x;
+            // Lerp velocity to zero over speedTransition
+            while (timer < speedTransition)
+            {
+                float t = timer / speedTransition;
+                float newVel = Mathf.Lerp(startVel, 0f, t);
+                rb.linearVelocity = new Vector2(newVel, rb.linearVelocity.y);
+                movementInput = Vector2.zero; // Ensure no movement is applied
+                timer += Time.deltaTime;
+                yield return null;
+            }
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            // Wait out the rest of the duration for input lock
+            float remaining = duration - speedTransition;
+            if (remaining > 0f)
+            {
+                movementInput = Vector2.zero;
+                yield return new WaitForSeconds(remaining);
+            }
+            movementInput = Vector2.zero;
+            isCancellingMove = false;
+            cancelMoveCoroutine = null;
         }
 
         public bool IsDashing { get; set; } = false;

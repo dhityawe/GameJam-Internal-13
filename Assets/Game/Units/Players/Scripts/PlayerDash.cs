@@ -23,6 +23,7 @@ namespace Game.Units.Players
         [SerializeField] private float dashEndDeceleration = 40f;
 
         private PlayerAnimationController playerAnimationController;
+        private PlayerAttack playerAttack;
 
         private Rigidbody2D rb;
         private float originalGravityScale;
@@ -47,6 +48,7 @@ namespace Game.Units.Players
             playerInput = input;
             playerMovement = GetComponent<PlayerMovement>();
             playerJump = GetComponent<PlayerJump>();
+            playerAttack = GetComponent<PlayerAttack>();
             playerAnimationController = GetComponent<PlayerAnimationController>();
             dashesLeft = maxDashes;
             SetupInputActions();
@@ -124,6 +126,9 @@ namespace Game.Units.Players
             dashTimer = dashDuration;
             dashCooldownTimer = dashCooldown;
             dashesLeft--;
+
+            // Cancel other actions
+            playerAttack.CancelAttack();
 
             // Play dash animation
             if (playerAnimationController != null)

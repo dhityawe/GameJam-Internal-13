@@ -60,7 +60,14 @@ namespace Game.Units.Players
                 jumpAction.performed += OnJumpPerformed;
                 jumpAction.canceled += OnJumpCanceled;
                 if (attackAction != null)
+                {
                     attackAction.performed += OnAttackPerformed;
+                    Debug.Log("[PlayerController] Attack action callback assigned");
+                }
+                else
+                {
+                    Debug.LogWarning("[PlayerController] Attack action not found!");
+                }
             }
         }
 
@@ -79,6 +86,7 @@ namespace Game.Units.Players
         }
         private void OnAttackPerformed(InputAction.CallbackContext context)
         {
+            Debug.Log("[PlayerController] OnAttackPerformed called");
             if (playerAttack != null)
             {
                 playerAttack.Attack();

@@ -8,7 +8,7 @@ namespace Game.Units.Players
         [Header("Base Stats")]
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int attack = 10;
-    // [SerializeField] private int defense = 5;
+    [SerializeField] private int defense = 5;
     // [SerializeField] private float moveSpeed = 8f;
     // [SerializeField] private float critChance = 0.05f;
     // [SerializeField] private float critMultiplier = 2f;
