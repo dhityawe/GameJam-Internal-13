@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,9 +136,9 @@ TextureImporter:
       name: dash 45x16_0
       rect:
         serializedVersion: 2
-        x: 35
+        x: 0
         y: 0
-        width: 12
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,9 +158,9 @@ TextureImporter:
       name: dash 45x16_1
       rect:
         serializedVersion: 2
-        x: 76
+        x: 45
         y: 0
-        width: 16
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -180,9 +180,9 @@ TextureImporter:
       name: dash 45x16_2
       rect:
         serializedVersion: 2
-        x: 117
+        x: 90
         y: 0
-        width: 20
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,9 +202,9 @@ TextureImporter:
       name: dash 45x16_3
       rect:
         serializedVersion: 2
-        x: 155
+        x: 135
         y: 0
-        width: 27
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -224,9 +224,9 @@ TextureImporter:
       name: dash 45x16_4
       rect:
         serializedVersion: 2
-        x: 186
+        x: 180
         y: 0
-        width: 176
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -246,7 +246,7 @@ TextureImporter:
       name: dash 45x16_5
       rect:
         serializedVersion: 2
-        x: 362
+        x: 225
         y: 0
         width: 45
         height: 16
@@ -268,9 +268,9 @@ TextureImporter:
       name: dash 45x16_6
       rect:
         serializedVersion: 2
-        x: 413
+        x: 270
         y: 0
-        width: 39
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -290,9 +290,9 @@ TextureImporter:
       name: dash 45x16_7
       rect:
         serializedVersion: 2
-        x: 461
+        x: 315
         y: 0
-        width: 36
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -312,9 +312,9 @@ TextureImporter:
       name: dash 45x16_8
       rect:
         serializedVersion: 2
-        x: 517
+        x: 360
         y: 0
-        width: 25
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -334,9 +334,9 @@ TextureImporter:
       name: dash 45x16_9
       rect:
         serializedVersion: 2
-        x: 567
+        x: 405
         y: 0
-        width: 20
+        width: 45
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: dash 45x16_10
       rect:
         serializedVersion: 2
-        x: 618
-        y: 1
-        width: 14
-        height: 15
+        x: 450
+        y: 0
+        width: 45
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: dash 45x16_11
       rect:
         serializedVersion: 2
-        x: 667
-        y: 2
-        width: 8
-        height: 14
+        x: 495
+        y: 0
+        width: 45
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,11 +396,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: dash 45x16_12
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 45
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a596e56b7e44f4041b7b25c48aa18995
+      internalID: 383604072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash 45x16_13
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 45
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a350cd7b23aea4e49828d7685144bf3e
+      internalID: -851880928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash 45x16_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 45
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a69e6082a06c34f923ce5254bb5820
+      internalID: -799551822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 14f75f70c3e1ca249bbc374ff9839762
     internalID: 0
     vertices: []
     indices: 
@@ -408,12 +474,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":45.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       dash 45x16_0: -7981740850156990369
       dash 45x16_1: -8483934320030852771
       dash 45x16_10: -3198635973391924219
       dash 45x16_11: 5892357876400461406
+      dash 45x16_12: 383604072
+      dash 45x16_13: -851880928
+      dash 45x16_14: -799551822
       dash 45x16_2: 5286222856240529062
       dash 45x16_3: -9178463370467332653
       dash 45x16_4: -3905273261977069303

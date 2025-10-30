@@ -14,32 +14,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpriteAnimations:
   - Name: Hurt
-    FPS: 12
+    FPS: 30
     Frames:
-    - {fileID: 376116825033521229, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 7377978015548117070, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -5488716384679650365, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 3241734356204068179, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -4540516090396719794, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -3566258723250690909, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 770923321593615040, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -7710964206737517224, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 8197361162336872013, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -7102797803753606454, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 5128304198451080230, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 3252881787832310321, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -6983852637827630034, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -2557674112840935948, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 3938449334962731643, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -2042043783483915133, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 5155732438078165961, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 4244855261752243318, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -5233444463024436984, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -4383231307377435809, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -5865329020703735946, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 6335074621335052276, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -709486150184260669, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 6491569036629670388, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: -5028940537929875260, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
-    - {fileID: 4542338327870134135, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -44904275, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 364095511, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 1069588987, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 496251862, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 263324457, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -1385621337, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -167641066, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: -867482457, guid: ad58f71541e25b14fad1450c235b6f32, type: 3}
+    - {fileID: 7851591046938481362, guid: 57932197e846b184db8f51e99623d241, type: 3}
+    SpriteAnimationType: 1
+  - Name: Lifesteal
+    FPS: 24
+    Frames:
+    - {fileID: -6518519419388635923, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
+    - {fileID: -5487166622457929214, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
+    - {fileID: 5412165347983751716, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
+    - {fileID: -7580633678812351896, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
+    - {fileID: -1106818273251031854, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
+    - {fileID: 8950617561278858451, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
+    - {fileID: 1455409176501194556, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
+    - {fileID: 6106818646074377048, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
+    - {fileID: -5407133694567396382, guid: 2a06c8be9df5bc14e9822fcfb1ad20f2, type: 3}
     SpriteAnimationType: 0
+  - Name: Block
+    FPS: 30
+    Frames:
+    - {fileID: -561719156962091881, guid: 33c1a44417c3d76449339df4acf12665, type: 3}
+    - {fileID: -2161455862127935638, guid: 33c1a44417c3d76449339df4acf12665, type: 3}
+    - {fileID: -6086672307602465590, guid: 33c1a44417c3d76449339df4acf12665, type: 3}
+    - {fileID: 7962531043487949404, guid: 33c1a44417c3d76449339df4acf12665, type: 3}
+    - {fileID: 4492409470040790359, guid: 33c1a44417c3d76449339df4acf12665, type: 3}
+    - {fileID: 772598109, guid: 33c1a44417c3d76449339df4acf12665, type: 3}
+    - {fileID: 7851591046938481362, guid: 57932197e846b184db8f51e99623d241, type: 3}
+    SpriteAnimationType: 1
+  - Name: Dash
+    FPS: 30
+    Frames:
+    - {fileID: -7981740850156990369, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: -8483934320030852771, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: 5286222856240529062, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: -9178463370467332653, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: -3905273261977069303, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: -7834620298141007559, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: 8109126291289852014, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: 5077303186503268477, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: 5875993872544197244, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: 6790152432588508268, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: -3198635973391924219, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: 5892357876400461406, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: 383604072, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: -851880928, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: -799551822, guid: 2db157db38aad384d893c7e7d1231abe, type: 3}
+    - {fileID: 7851591046938481362, guid: 57932197e846b184db8f51e99623d241, type: 3}
+    SpriteAnimationType: 1
+  - Name: Parry
+    FPS: 30
+    Frames:
+    - {fileID: 6613151076345700306, guid: 6dcc583bd45caf041bc2db6e7ef96251, type: 3}
+    - {fileID: 4760687839435189792, guid: 6dcc583bd45caf041bc2db6e7ef96251, type: 3}
+    - {fileID: -5815796941895295842, guid: 6dcc583bd45caf041bc2db6e7ef96251, type: 3}
+    - {fileID: 4477540252583608149, guid: 6dcc583bd45caf041bc2db6e7ef96251, type: 3}
+    - {fileID: -692076584, guid: 6dcc583bd45caf041bc2db6e7ef96251, type: 3}
+    - {fileID: -1758068271, guid: 6dcc583bd45caf041bc2db6e7ef96251, type: 3}
+    - {fileID: 7851591046938481362, guid: 57932197e846b184db8f51e99623d241, type: 3}
+    SpriteAnimationType: 1
+  - Name: QuickAttack
+    FPS: 30
+    Frames:
+    - {fileID: 2121658070, guid: 492767228fc193442b7679b0aa4edce6, type: 3}
+    - {fileID: 2037844447, guid: 492767228fc193442b7679b0aa4edce6, type: 3}
+    - {fileID: -5002608235079813742, guid: 492767228fc193442b7679b0aa4edce6, type: 3}
+    - {fileID: 2853922394238271808, guid: 492767228fc193442b7679b0aa4edce6, type: 3}
+    - {fileID: 1699090946247360583, guid: 492767228fc193442b7679b0aa4edce6, type: 3}
+    - {fileID: 4871286717045205211, guid: 492767228fc193442b7679b0aa4edce6, type: 3}
+    - {fileID: 1589523139, guid: 492767228fc193442b7679b0aa4edce6, type: 3}
+    - {fileID: 7851591046938481362, guid: 57932197e846b184db8f51e99623d241, type: 3}
+    SpriteAnimationType: 1

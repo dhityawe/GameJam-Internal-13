@@ -63,7 +63,6 @@ namespace Game.Units.Players
                 if (attackAction != null)
                 {
                     attackAction.performed += OnAttackPerformed;
-                    Debug.Log("[PlayerController] Attack action callback assigned");
                 }
                 else
                 {
@@ -87,7 +86,6 @@ namespace Game.Units.Players
         }
         private void OnAttackPerformed(InputAction.CallbackContext context)
         {
-            Debug.Log("[PlayerController] OnAttackPerformed called");
             if (playerBlock != null && playerBlock.IsBlocking) return;
             if (playerAttack != null)
             {

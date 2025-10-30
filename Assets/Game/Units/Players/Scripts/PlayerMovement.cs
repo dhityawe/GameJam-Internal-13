@@ -54,6 +54,7 @@ namespace Game.Units.Players
                 StopCoroutine(cancelMoveCoroutine);
                 cancelMoveCoroutine = null;
             }
+            Debug.Log("[PlayerMovement] CancelMoving: starting lock");
             if (rb != null)
                 cancelMoveCoroutine = StartCoroutine(CancelMovingRoutine());
         }
@@ -63,6 +64,7 @@ namespace Game.Units.Players
         /// </summary>
         public void StopCancelMoving()
         {
+            Debug.Log("[PlayerMovement] StopCancelMoving: unlocking movement");
             if (cancelMoveCoroutine != null)
             {
                 StopCoroutine(cancelMoveCoroutine);
@@ -75,30 +77,15 @@ namespace Game.Units.Players
         {
             isCancellingMove = true;
             movementInput = Vector2.zero;
-            float duration = 0.5f; // Total input lockout
-            float speedTransition = 0.35f; // How fast velocity reaches zero
-            float timer = 0f;
-            float startVel = rb.linearVelocity.x;
-            // Lerp velocity to zero over speedTransition
-            while (timer < speedTransition)
-            {
-                float t = timer / speedTransition;
-                float newVel = Mathf.Lerp(startVel, 0f, t);
-                rb.linearVelocity = new Vector2(newVel, rb.linearVelocity.y);
-                movementInput = Vector2.zero; // Ensure no movement is applied
-                timer += Time.deltaTime;
-                yield return null;
-            }
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-            // Wait out the rest of the duration for input lock
-            float remaining = duration - speedTransition;
-            if (remaining > 0f)
+            // Instantly stop horizontal velocity
+            if (rb != null)
+                rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            // Wait indefinitely until StopCancelMoving is called
+            while (isCancellingMove)
             {
                 movementInput = Vector2.zero;
-                yield return new WaitForSeconds(remaining);
+                yield return null;
             }
-            movementInput = Vector2.zero;
-            isCancellingMove = false;
             cancelMoveCoroutine = null;
         }
 

@@ -5,13 +5,6 @@ namespace Game.Units.Players
 {
     public class PlayerDash : MonoBehaviour
     {
-        public void CancelDash()
-        {
-            if (isDashing)
-            {
-                EndDash();
-            }
-        }
         [Header("Dash Settings")]
         [SerializeField] private float dashDuration = 0.2f;
         [SerializeField] private float dashCooldown = 0.3f;
@@ -169,6 +162,14 @@ namespace Game.Units.Players
             }
         }
 
+        public void CancelDash()
+        {
+            if (isDashing)
+            {
+                EndDash();
+            }
+        }
+        
         // Call this from PlayerController when grounded
         public void OnLanded()
         {
