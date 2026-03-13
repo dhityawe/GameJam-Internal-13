@@ -87,6 +87,7 @@ namespace Game.Units.Players
         private void OnAttackPerformed(InputAction.CallbackContext context)
         {
             if (playerBlock != null && playerBlock.IsBlocking) return;
+            if (playerDash != null && playerDash.IsDashing) return;
             if (playerAttack != null)
             {
                 playerAttack.Attack();

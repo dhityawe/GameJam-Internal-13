@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b9e2a4dfcdc9b4c9d1ab2beb4cd146, type: 3}
+  m_Name: Attack 2
+  m_EditorClassIdentifier: 
+  hitbox:
+    shape: 1
+    offset: {x: 1.6, y: 0.7}
+    radius: 0.5
+    size: {x: 1.4, y: 1.2}
+  frameEvents:
+  - eventType: 0
+    startFrame: 10
+    endFrame: 13
+    vfxPrefab: {fileID: 0}
+    vfxOffset: {x: 0, y: 0}
+    sound: {fileID: 0}
+    soundVolume: 0
+    cameraShakeStrength: 0
+    cameraShakeDuration: 0
+    moveForce: {x: 2, y: 0}
+    moveForceUsesFacing: 1
+    overrideHorizontalVelocity: 1
+  - eventType: 1
+    startFrame: 24
+    endFrame: 0
+    vfxPrefab: {fileID: 0}
+    vfxOffset: {x: 0, y: 0}
+    sound: {fileID: 0}
+    soundVolume: 0
+    cameraShakeStrength: 0
+    cameraShakeDuration: 0
+    moveForce: {x: 2, y: 0}
+    moveForceUsesFacing: 1
+    overrideHorizontalVelocity: 1

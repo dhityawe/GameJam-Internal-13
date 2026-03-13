@@ -152,6 +152,9 @@ namespace Game.Units.Players
             {
                 rb.gravityScale = originalGravityScale;
             }
+            // Release any movement lock that may have been set during the dash (e.g. attack pressed mid-dash)
+            if (playerMovement != null)
+                playerMovement.StopCancelMoving();
             if (playerAnimationController != null)
             {
                 bool grounded = playerJump != null ? playerJump.IsGrounded() : false;

@@ -37,6 +37,16 @@ namespace Game.Units.Players
         private bool playAttack1Next = true;
         public bool IsBlocking { get; set; }
 
+        public string PeekNextAttackAnimationName() => playAttack1Next ? "Attack1" : "Attack2";
+
+        public SpriteAnimation PeekNextAttackAnimation()
+        {
+            if (playerAnim == null)
+                return null;
+
+            return playerAnim.GetAnimationByName(PeekNextAttackAnimationName(), false);
+        }
+
 
         private void Awake()
         {
@@ -144,7 +154,7 @@ namespace Game.Units.Players
                     break;
                 case AnimState.Attack:
                     isTransitioning = true;
-                    string attackAnimName = playAttack1Next ? "Attack1" : "Attack2";
+                    string attackAnimName = PeekNextAttackAnimationName();
                     playAttack1Next = !playAttack1Next;
                     playerAnim.Play(attackAnimName).SetOnComplete(() => {
                         isTransitioning = false;

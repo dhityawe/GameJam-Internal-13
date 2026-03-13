@@ -57,6 +57,7 @@ MonoBehaviour:
     - {fileID: 5878331790293146832, guid: dc7fec150517df9469aabea8ec0e0f73, type: 3}
     - {fileID: -7494887683080363229, guid: dc7fec150517df9469aabea8ec0e0f73, type: 3}
     SpriteAnimationType: 0
+    AttackData: {fileID: 0}
   - Name: Move
     FPS: 34
     Frames:
@@ -82,6 +83,7 @@ MonoBehaviour:
     - {fileID: 3454116531194950640, guid: b2ca8110a1789664aae5dfff375daad4, type: 3}
     - {fileID: 130223768030532334, guid: b2ca8110a1789664aae5dfff375daad4, type: 3}
     SpriteAnimationType: 0
+    AttackData: {fileID: 0}
   - Name: OnJump
     FPS: 120
     Frames:
@@ -99,12 +101,14 @@ MonoBehaviour:
     - {fileID: -7810803537696417755, guid: c8e1e5d2cd8359d42ad37ef13405c63c, type: 3}
     - {fileID: 7239986427860625178, guid: c8e1e5d2cd8359d42ad37ef13405c63c, type: 3}
     SpriteAnimationType: 1
+    AttackData: {fileID: 0}
   - Name: OnAir
     FPS: 6
     Frames:
     - {fileID: -3499918286812187939, guid: c8e1e5d2cd8359d42ad37ef13405c63c, type: 3}
     - {fileID: -141085772950971166, guid: c8e1e5d2cd8359d42ad37ef13405c63c, type: 3}
     SpriteAnimationType: 0
+    AttackData: {fileID: 0}
   - Name: OnGround
     FPS: 120
     Frames:
@@ -123,6 +127,7 @@ MonoBehaviour:
     - {fileID: 4432166594215786443, guid: c8e1e5d2cd8359d42ad37ef13405c63c, type: 3}
     - {fileID: -7047773196209826438, guid: c8e1e5d2cd8359d42ad37ef13405c63c, type: 3}
     SpriteAnimationType: 1
+    AttackData: {fileID: 0}
   - Name: Dash
     FPS: 144
     Frames:
@@ -164,6 +169,7 @@ MonoBehaviour:
     - {fileID: -5647686154677612828, guid: 3474ccaf4a386d7489b593ac8b64d7d2, type: 3}
     - {fileID: -8652522738017294143, guid: 3474ccaf4a386d7489b593ac8b64d7d2, type: 3}
     SpriteAnimationType: 1
+    AttackData: {fileID: 0}
   - Name: Attack1
     FPS: 36
     Frames:
@@ -188,6 +194,7 @@ MonoBehaviour:
     - {fileID: -33539943398505607, guid: 33e0dcfb0fad71742afab81448d6d364, type: 3}
     - {fileID: 2815524727957081972, guid: 33e0dcfb0fad71742afab81448d6d364, type: 3}
     SpriteAnimationType: 1
+    AttackData: {fileID: 11400000, guid: 7dd9003b45f58064d8b2ffb383e7ea0c, type: 2}
   - Name: Attack2
     FPS: 36
     Frames:
@@ -227,6 +234,7 @@ MonoBehaviour:
     - {fileID: -7124156028951722268, guid: f9d647074d11cd444a6f1b12382eebe5, type: 3}
     - {fileID: 5895934538152182292, guid: f9d647074d11cd444a6f1b12382eebe5, type: 3}
     SpriteAnimationType: 1
+    AttackData: {fileID: 11400000, guid: 57f50ece29cfb4b4ab3e9e23924842d5, type: 2}
   - Name: QuickAttack
     FPS: 36
     Frames:
@@ -296,6 +304,7 @@ MonoBehaviour:
     - {fileID: -2056003105785063520, guid: 89ec7033a066e9745853210772ce2e60, type: 3}
     - {fileID: -3781225903668918507, guid: 89ec7033a066e9745853210772ce2e60, type: 3}
     SpriteAnimationType: 1
+    AttackData: {fileID: 11400000, guid: 69ae661c169c18b4bb9710c1e5495eab, type: 2}
   - Name: Block
     FPS: 24
     Frames:
@@ -355,8 +364,9 @@ MonoBehaviour:
     - {fileID: 8199451881306213530, guid: 043025a9f5da3d84aa2df49b19f29b3c, type: 3}
     - {fileID: 7302982952225231223, guid: 043025a9f5da3d84aa2df49b19f29b3c, type: 3}
     SpriteAnimationType: 0
+    AttackData: {fileID: 0}
   - Name: Shoot
-    FPS: 24
+    FPS: 40
     Frames:
     - {fileID: -2408530018317867212, guid: 14f3876f89648e14ca9a9a40c4f31b9d, type: 3}
     - {fileID: -9120936505241938292, guid: 14f3876f89648e14ca9a9a40c4f31b9d, type: 3}
@@ -389,3 +399,4 @@ MonoBehaviour:
     - {fileID: 2625134657903098777, guid: 14f3876f89648e14ca9a9a40c4f31b9d, type: 3}
     - {fileID: 531824556198047110, guid: 14f3876f89648e14ca9a9a40c4f31b9d, type: 3}
     SpriteAnimationType: 1
+    AttackData: {fileID: 0}

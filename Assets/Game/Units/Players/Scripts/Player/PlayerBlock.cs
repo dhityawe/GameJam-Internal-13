@@ -65,6 +65,8 @@ namespace Game.Units.Players
             isBlocking = false;
             if (playerAnimationController != null)
                 playerAnimationController.IsBlocking = false;
+            // Release movement lock set by OnBlockPerformed before syncing animation state
+            playerMovement.StopCancelMoving();
             // Immediately break out of block animation and sync to correct state
             playerAnimationController.ForceImmediateStateSync();
         }

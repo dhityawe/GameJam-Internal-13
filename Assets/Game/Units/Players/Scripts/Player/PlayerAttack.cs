@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GabrielBigardi.SpriteAnimator;
 
 namespace Game.Units.Players
 {
@@ -13,52 +14,40 @@ namespace Game.Units.Players
         [SerializeField] private float attackCooldown = 0.3f;
         public float AttackCooldown => attackCooldown;
         private float attackTimer = 0f;
+        [SerializeField] private bool enableDebugLogs = false;
+        [SerializeField] private int hitDetectionBufferSize = 32;
 
         private PlayerStats playerStats;
         private PlayerAnimationController playerAnimationController;
         private PlayerMovement playerMovement;
+        private Rigidbody2D rb;
+        private readonly Dictionary<string, Dictionary<int, List<Action>>> cachedFrameEventMaps = new();
+        private Collider2D[] hitDetectionResults;
+        private ContactFilter2D hitDetectionFilter;
+        private Coroutine hitStopCoroutine;
         
-
-        #region Attack Frame
-        [Serializable]
-        public struct AttackFrameInfo
-        {
-            public string animationName;
-            public int unlockFrame;
-            [Tooltip("List of frame indices (0-based) where attack hit should occur.")]
-            public List<int> attackHitFrames;
-        }
-        [Header("Attack Animation Timing")]
-        [Tooltip("List of attack animation names and their unlock frames.")]
-        [SerializeField] private List<AttackFrameInfo> attackUnlockFrames = new List<AttackFrameInfo>();
-        public int GetUnlockFrameForAnimation(string animName)
-        {
-            foreach (var info in attackUnlockFrames)
-            {
-                if (info.animationName == animName)
-                    return info.unlockFrame;
-            }
-            return 4; // fallback default
-        }
-        public List<int> GetHitFramesForAnimation(string animName)
-        {
-            foreach (var info in attackUnlockFrames)
-            {
-                if (info.animationName == animName)
-                    return info.attackHitFrames;
-            }
-            return null;
-        }
-        #endregion
-
         #region Attack Config
-        [Header("Attack Area")]
-        [SerializeField] private Transform attackPoint;
-        [SerializeField] private float attackRange = 0.5f;
+        [Header("Attack Target Filter")]
         [SerializeField] private LayerMask enemyLayers;
         private void Awake()
         {
             playerStats = GetComponent<PlayerStats>();
+            rb = GetComponent<Rigidbody2D>();
+            hitDetectionResults = new Collider2D[Mathf.Max(4, hitDetectionBufferSize)];
+            ConfigureHitDetectionFilter();
+        }
+
+        private void OnValidate()
+        {
+            hitDetectionBufferSize = Mathf.Max(4, hitDetectionBufferSize);
+            ConfigureHitDetectionFilter();
+        }
+
+        private void ConfigureHitDetectionFilter()
+        {
+            hitDetectionFilter.useTriggers = true;
+            hitDetectionFilter.useLayerMask = true;
+            hitDetectionFilter.SetLayerMask(enemyLayers);
         }
 
         void Start()
@@ -87,57 +76,227 @@ namespace Game.Units.Players
             playerMovement.CancelMoving();
 
             // Setup per-frame unlock event for attack animation
-            string attackAnimName = "Attack1";
             if (playerAnimationController != null)
             {
-                // Alternate between Attack1 and Attack2 if needed
-                var animCtrlType = playerAnimationController.GetType();
-                var playAttack1NextField = animCtrlType.GetField("playAttack1Next", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                if (playAttack1NextField != null && playAttack1NextField.GetValue(playerAnimationController) is bool playAttack1Next)
-                {
-                    attackAnimName = playAttack1Next ? "Attack1" : "Attack2";
-                }
+                SpriteAnimation attackAnimation = playerAnimationController.PeekNextAttackAnimation();
+                string attackAnimName = attackAnimation != null
+                    ? attackAnimation.Name
+                    : playerAnimationController.PeekNextAttackAnimationName();
 
-                int unlockFrame = GetUnlockFrameForAnimation(attackAnimName);
-                var hitFrames = GetHitFramesForAnimation(attackAnimName);
-                var frameEvents = new Dictionary<int, List<Action>>();
-                // Unlock movement event
-                frameEvents[unlockFrame] = new List<Action> {
-                    () => {
-                        Debug.Log($"[PlayerAttack] Unlock frame event fired for {attackAnimName} at frame {unlockFrame}");
-                        playerMovement.StopCancelMoving();
-                    }
-                };
-                // Attack hit events
-                if (hitFrames != null)
-                {
-                    foreach (var hitFrame in hitFrames)
-                    {
-                        if (!frameEvents.ContainsKey(hitFrame))
-                            frameEvents[hitFrame] = new List<Action>();
-                        int frameCopy = hitFrame;
-                        frameEvents[hitFrame].Add(() => OnAttackHit(attackAnimName, frameCopy));
-                    }
-                }
+                AttackData attackData = attackAnimation != null ? attackAnimation.AttackData as AttackData : null;
+                var frameEvents = GetOrBuildFrameEvents(attackAnimName, attackAnimation, attackData);
                 playerAnimationController.playerAnim.SetAnimationFrameEvents(attackAnimName, frameEvents);
 
             }
 
             playerAnimationController.AttackAnim();
+        }
 
-            if (attackPoint == null)
+        private Dictionary<int, List<Action>> GetOrBuildFrameEvents(string attackAnimName, SpriteAnimation attackAnimation, AttackData attackData)
+        {
+            string cacheKey = BuildCacheKey(attackAnimName, attackAnimation, attackData);
+            if (cachedFrameEventMaps.TryGetValue(cacheKey, out Dictionary<int, List<Action>> cachedFrameEvents))
+                return cachedFrameEvents;
+
+            Dictionary<int, List<Action>> builtFrameEvents = BuildFrameEvents(attackAnimName, attackAnimation, attackData);
+            cachedFrameEventMaps[cacheKey] = builtFrameEvents;
+            return builtFrameEvents;
+        }
+
+        private string BuildCacheKey(string attackAnimName, SpriteAnimation attackAnimation, AttackData attackData)
+        {
+            int frameCount = attackAnimation != null && attackAnimation.Frames != null ? attackAnimation.Frames.Count : 0;
+            int attackDataId = attackData != null ? attackData.GetInstanceID() : 0;
+            return attackAnimName + ":" + frameCount + ":" + attackDataId;
+        }
+
+        private Dictionary<int, List<Action>> BuildFrameEvents(string attackAnimName, SpriteAnimation attackAnimation, AttackData attackData)
+        {
+            var frameEvents = new Dictionary<int, List<Action>>();
+            bool hasUnlockMovementEvent = false;
+
+            if (attackData != null)
             {
-                Debug.LogWarning("[PlayerAttack] AttackPoint not assigned!");
-                return;
+                foreach (FrameEvent frameEvent in attackData.FrameEvents)
+                {
+                    if (frameEvent == null)
+                        continue;
+
+                    int startFrame = ClampFrame(frameEvent.StartFrame, attackAnimation);
+                    int endFrame = ClampFrame(frameEvent.EndFrame, attackAnimation);
+                    if (endFrame < startFrame)
+                        endFrame = startFrame;
+
+                    if (frameEvent.EventType == FrameEventType.UnlockMovement)
+                        hasUnlockMovementEvent = true;
+
+                    // Hit windows are visualized as ranges in data, but runtime hit detection is executed once on window entry.
+                    if (frameEvent.EventType == FrameEventType.Hit || frameEvent.EventType == FrameEventType.MoveForce)
+                    {
+                        FrameEvent frameEventCopy = frameEvent;
+                        AddFrameEvent(frameEvents, startFrame, () => ExecuteFrameEvent(attackAnimName, attackData, frameEventCopy, startFrame));
+                        continue;
+                    }
+
+                    for (int frame = startFrame; frame <= endFrame; frame++)
+                    {
+                        int frameCopy = frame;
+                        FrameEvent frameEventCopy = frameEvent;
+                        AddFrameEvent(frameEvents, frameCopy, () => ExecuteFrameEvent(attackAnimName, attackData, frameEventCopy, frameCopy));
+                    }
+                }
+            }
+
+            if (!hasUnlockMovementEvent)
+            {
+                int unlockFrame = ResolveFallbackUnlockFrame(attackAnimation);
+                AddFrameEvent(frameEvents, unlockFrame, () => {
+                    if (enableDebugLogs)
+                        Debug.Log($"[PlayerAttack] Unlock frame event fired for {attackAnimName} at frame {unlockFrame}");
+                    playerMovement.StopCancelMoving();
+                    playerAnimationController.ForceImmediateStateSync();
+                });
+            }
+
+            return frameEvents;
+        }
+
+        private void AddFrameEvent(Dictionary<int, List<Action>> frameEvents, int frame, Action callback)
+        {
+            if (!frameEvents.ContainsKey(frame))
+                frameEvents[frame] = new List<Action>();
+
+            frameEvents[frame].Add(callback);
+        }
+
+        private void ExecuteFrameEvent(string animName, AttackData attackData, FrameEvent frameEvent, int frame)
+        {
+            switch (frameEvent.EventType)
+            {
+                case FrameEventType.Hit:
+                    OnAttackHit(animName, frame, attackData);
+                    break;
+                case FrameEventType.UnlockMovement:
+                    if (enableDebugLogs)
+                        Debug.Log($"[PlayerAttack] UnlockMovement fired for {animName} at frame {frame}");
+                    playerMovement.StopCancelMoving();
+                    playerAnimationController.ForceImmediateStateSync();
+                    break;
+                case FrameEventType.MoveForce:
+                    ApplyMoveForce(frameEvent, animName, frame);
+                    break;
+                case FrameEventType.SpawnVFX:
+                    if (enableDebugLogs)
+                        Debug.Log($"[PlayerAttack] SpawnVFX fired for {animName} at frame {frame}");
+                    break;
+                case FrameEventType.PlaySound:
+                    if (enableDebugLogs)
+                        Debug.Log($"[PlayerAttack] PlaySound fired for {animName} at frame {frame}");
+                    break;
+                case FrameEventType.CameraShake:
+                    if (enableDebugLogs)
+                        Debug.Log($"[PlayerAttack] CameraShake fired for {animName} at frame {frame}");
+                    break;
             }
         }
 
-        // Called when attack hit frame is reached
-        private void OnAttackHit(string animName, int frame)
+        private int ResolveFallbackUnlockFrame(SpriteAnimation attackAnimation)
         {
-            Debug.Log("<color=yellow>[PlayerAttack]</color> Attack hit event fired for " + animName + " at frame " + frame);
+            int fallbackFrame = 4;
+            if (attackAnimation == null || attackAnimation.Frames == null || attackAnimation.Frames.Count == 0)
+                return fallbackFrame;
+
+            return Mathf.Min(fallbackFrame, attackAnimation.Frames.Count - 1);
+        }
+
+        private int ClampFrame(int frame, SpriteAnimation attackAnimation)
+        {
+            if (attackAnimation == null || attackAnimation.Frames == null || attackAnimation.Frames.Count == 0)
+                return Mathf.Max(0, frame);
+
+            return Mathf.Clamp(frame, 0, attackAnimation.Frames.Count - 1);
+        }
+
+        // Called when attack hit frame is reached
+        private void OnAttackHit(string animName, int frame, AttackData attackData)
+        {
+            int hitCount = PerformHitDetection(attackData);
+            if (enableDebugLogs)
+                Debug.Log("<color=yellow>[PlayerAttack]</color> Attack hit event fired for " + animName + " at frame " + frame);
             // Place your hit logic here (e.g., damage enemies)
-            StartCoroutine(HitStop());
+            if (enableDebugLogs && hitCount > 0)
+            {
+                Debug.Log($"[PlayerAttack] {hitCount} target(s) found in hitbox.");
+            }
+
+            if (hitStopCoroutine == null)
+                hitStopCoroutine = StartCoroutine(HitStop());
+        }
+
+        private void ApplyMoveForce(FrameEvent frameEvent, string animName, int frame)
+        {
+            if (rb == null)
+                return;
+
+            Vector2 force = frameEvent.MoveForce;
+            if (frameEvent.MoveForceUsesFacing)
+            {
+                float facingSign = Mathf.Approximately(transform.lossyScale.x, 0f) ? 1f : Mathf.Sign(transform.lossyScale.x);
+                force.x *= facingSign;
+            }
+
+            if (frameEvent.OverrideHorizontalVelocity)
+            {
+                rb.linearVelocity = new Vector2(force.x, rb.linearVelocity.y + force.y);
+            }
+            else
+            {
+                rb.AddForce(force, ForceMode2D.Impulse);
+            }
+
+            if (enableDebugLogs)
+                Debug.Log($"[PlayerAttack] MoveForce fired for {animName} at frame {frame} with force {force}");
+        }
+
+        private int PerformHitDetection(AttackData attackData)
+        {
+            if (attackData == null || attackData.Hitbox == null)
+                return 0;
+
+            EnsureHitDetectionBuffer();
+
+            AttackHitbox hitbox = attackData.Hitbox;
+            Vector2 hitboxCenter = GetHitboxCenter(hitbox.Offset);
+            int hitCount;
+
+            if (hitbox.Shape == AttackHitboxShape.Box)
+            {
+                hitCount = Physics2D.OverlapBox(hitboxCenter, hitbox.Size, 0f, hitDetectionFilter, hitDetectionResults);
+            }
+            else
+            {
+                hitCount = Physics2D.OverlapCircle(hitboxCenter, hitbox.Radius, hitDetectionFilter, hitDetectionResults);
+            }
+
+            if (hitCount >= hitDetectionResults.Length)
+            {
+                Array.Resize(ref hitDetectionResults, hitDetectionResults.Length * 2);
+            }
+
+            return hitCount;
+        }
+
+        private void EnsureHitDetectionBuffer()
+        {
+            if (hitDetectionResults == null || hitDetectionResults.Length == 0)
+                hitDetectionResults = new Collider2D[Mathf.Max(4, hitDetectionBufferSize)];
+        }
+
+        private Vector2 GetHitboxCenter(Vector2 localOffset)
+        {
+            float facingSign = Mathf.Approximately(transform.lossyScale.x, 0f) ? 1f : Mathf.Sign(transform.lossyScale.x);
+            Vector2 signedOffset = new(localOffset.x * facingSign, localOffset.y);
+            return (Vector2)transform.position + signedOffset;
         }
 
         /// <summary>
@@ -166,17 +325,39 @@ namespace Game.Units.Players
             Time.timeScale = 0f;
             yield return new WaitForSecondsRealtime(0.03f);
             Time.timeScale = 1f;
+            hitStopCoroutine = null;
         }
         #endregion
 
         #region Debug Area
         private void OnDrawGizmosSelected()
         {
-            if (attackPoint != null)
+            AttackData attackData = GetPreviewAttackData();
+            if (attackData == null || attackData.Hitbox == null)
+                return;
+
+            Gizmos.color = Color.red;
+            Vector2 center = GetHitboxCenter(attackData.Hitbox.Offset);
+            if (attackData.Hitbox.Shape == AttackHitboxShape.Box)
             {
-                Gizmos.color = Color.red;
-                Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+                Gizmos.DrawWireCube(center, attackData.Hitbox.Size);
             }
+            else
+            {
+                Gizmos.DrawWireSphere(center, attackData.Hitbox.Radius);
+            }
+        }
+
+        private AttackData GetPreviewAttackData()
+        {
+            if (playerAnimationController == null)
+                playerAnimationController = GetComponent<PlayerAnimationController>();
+
+            SpriteAnimation attackAnimation = playerAnimationController != null
+                ? playerAnimationController.PeekNextAttackAnimation()
+                : null;
+
+            return attackAnimation != null ? attackAnimation.AttackData as AttackData : null;
         }
         #endregion
     }
