@@ -58,7 +58,7 @@ MonoBehaviour:
     - {fileID: -7494887683080363229, guid: dc7fec150517df9469aabea8ec0e0f73, type: 3}
     SpriteAnimationType: 0
   - Name: Move
-    FPS: 24
+    FPS: 34
     Frames:
     - {fileID: -3643998761827717319, guid: b2ca8110a1789664aae5dfff375daad4, type: 3}
     - {fileID: -4707866458138886681, guid: b2ca8110a1789664aae5dfff375daad4, type: 3}
